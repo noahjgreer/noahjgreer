@@ -4,7 +4,7 @@
 - 🌱 I’m currently learning (trying to learn) Proper Etiquette, C#, JavaScript.
 - 💞️ I’m looking to collaborate on Minecraft Datapacks
 - 📫 How to reach me: noahjgreer@gmail.com
-- 🧠 I know HTML, CSS, Javascript, Scratch, and Minecraft Code or whatever it's called
+- 🧠 I know HTML, CSS, Javascript, C#, Scratch, and Minecraft Code or whatever it's called
 
 <!---
 woahnoah07/woahnoah07 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
