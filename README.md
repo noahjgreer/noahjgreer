@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Noah! (@noahjgreer)
 - 🦊 If you want a peek at my personal life, follow me on my socials @FinniTheFox
-- 👀 I’m interested in Coding, Minecraft, Painting, Writing, Drawing, Dreaming, Running, Praying, Posting, Furry-ing, Building, as well as other stuff too.
+- 👀 I’m interested in Coding, Minecraft, Painting, Writing, Drawing, Dreaming, Running, Praying, Posting, Furry-ing, Building, Filming, as well as other stuff too.
 - 🌱 I’m currently learning C#.
 - 💞️ I’m looking to collaborate on Minecraft, Unity, and Web Development Projects.
 - 📫 How to reach me: noahjgreer@gmail.com
