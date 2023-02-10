@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/user/75ffedea-334a-4a78-a503-91c919c5eee2.svg)](https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2)
+
 - 👋 Hi, I’m Noah! (@noahjgreer)
 - 🦊 If you want a peek at my personal life, follow me on my socials @FinniTheFox
 - 👀 I’m interested in Coding, Minecraft, Painting, Writing, Drawing, Dreaming, Running, Praying, Posting, Furry-ing, Building, Filming, as well as other stuff too.
