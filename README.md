@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/user/75ffedea-334a-4a78-a503-91c919c5eee2.svg)](https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2)
+[![wakatime](https://wakatime.com/badge/user/75ffedea-334a-4a78-a503-91c919c5eee2.svg)](https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2)  
 ![Noah's GitHub stats](https://github-readme-stats.vercel.app/api?username=noahjgreer&show_icons=true)
 
 - 👋 Hi, I’m Noah! (@noahjgreer)
