@@ -1,4 +1,5 @@
 [![wakatime](https://wakatime.com/badge/user/75ffedea-334a-4a78-a503-91c919c5eee2.svg)](https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2)  
+[![wakatime](https://wakatime.com/share/@FinniTheFox/40fa60a3-3a24-416d-89c0-8755688c2bdc.svg)](https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2)  
 
 - 👋 Hi, I’m Noah! (@noahjgreer)
 - 🦊 If you want a peek at my personal life, follow me on my socials @FinniTheFox
