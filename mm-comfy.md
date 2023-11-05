@@ -38,8 +38,8 @@ The positive prompt is similar to most AI image generators, in which you will ty
 The negative prompt is something which you generally won't see in most widely used AI image generators which you can find on the web. To keep things simple, the negative prompt is basically anything you *don't* want to see. (`malformed limbs, extra fingers, merged legs`) etc. Negative Prompts can get very long, so I would suggest using an embedding, by typing in `embedding:FastNegativeV2` or `embedding:EasyNegative` instead, to keep you from losing your mind.
 ##### Empty Latent Sizes (empty_latent_with AND empty_latent_height)
 This is the width and height, in pixels, which you want your image to generate at. These can't be anything you want, but the node will automatically round whatever you put in to the nearest 16th, so that it will be able to generate normally.
-#### Loader
-The loader is the second peice of the puzzle for generating images. This is basically the node which does the generating of your image. It's the node that is yellow, and found in the middle of the workflow.
+#### Sampler
+The sampler is the second peice of the puzzle for generating images. This is basically the node which does the generating of your image. It's the node that is yellow, and found in the middle of the workflow.
 ##### Noise Seed (noise_seed)
 The noise seed is basically the random noisemap that will be used to generate the image. In short, when an AI generates an image, it generates a big noisy image, similar to TV static, and then slowly adds on layers based on the model you selected, the prompt you inputted, and the settings you set. By default, this input field should be set to -1, so that it will generate a new image every time. If it is set to a seed, (e.g. 18924981982984), then it will make the exact same image every time, if you don't change the prompt text or settings. In some ways, this can be very useful! If you find an image generation you absolutely loved, you can lock the seed so that it will generate that same image, but then you can tweak the positive and negative prompt to further refine the image to your liking.
 ##### Steps (steps)
