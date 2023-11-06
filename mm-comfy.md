@@ -1,5 +1,11 @@
-# MuffinMode
+# **MuffinMode**
 MuffinMode is a web server I run on my computer. :3 Its most common public use is for generating stable-diffusion images. It runs on fing called ComfyUI, which is a semi-user-friendly graphical user interface, which gives more control and faster generations compared to alternative generators.
+## Index
+- [ComfyUI Image Generation](#comfyui-image-generation)
+  - [Compared to Bing](#compared-to-bing)
+  - [Notes and FAQ](#notes-and-faq)
+  - [Getting Started Guide](#getting-started-guide)
+# ComfyUI Image Generation
 ## Compared to Bing
 Compared to the Bing Image generator, there are lots of pros and cons to using MuffinMode.
 ### Pros:
