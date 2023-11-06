@@ -11,6 +11,11 @@ Compared to the Bing Image generator, there are lots of pros and cons to using M
 - You have to be more detailed with your descriptions
 - More options
 - Slight Learning Curve
+## Notes and FAQ
+- Keep in mind, if you save a workflow using the "Save" button in the side panel, ComfyUI will set the seed in the sampler to be the previous seed as it is exported. While this is great for recreating the exact same image, it will lead to the same image every generation as explained in the [noise seed details section](#noise-seed-noise_seed), so make sure you set the sampler noise seed to -1 to get new images! (As a rule of thumb, if your workflow makes the exact same images every time, it is very likely because your seed is fixed to a specific value.)
+- Q: Why are there multiple characters in my generations?
+
+  A: Multiple characters occur when you don't specify for there to only be a single character. If you want just a single subject, place `solo` near the beginning of the positive prompt, and `multiple partners, multiple subjects` near the beginning of your negative prompt. Where you put your keywords/phrases in your prompts matters! The AI will focus on prompts in 75 word bursts of "interest". 
 ## Getting Started Guide
 To get started using MuffinMode's ComfyUI, click on [this](http://muffinmode.net:8188) link. You'll be brought to a page with a node-graph. :3 It will probably have the default graph loaded, but I would recommend using the simpler, more fine-tuned graph which I will go in depth about below.
 ### Loading the Default Workflow
