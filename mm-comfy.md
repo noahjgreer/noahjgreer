@@ -32,7 +32,7 @@ Compared to the Bing Image generator, there are lots of pros and cons to using M
 ## Getting Started Guide
 To get started using MuffinMode's ComfyUI, click on [this](http://muffinmode.net:8188) link. You'll be brought to a page with a node-graph. :3 It will probably have the default graph loaded, but I would recommend using the simpler, more fine-tuned graph which I will go in depth about below.
 ### Loading the Default Workflow
-To make furry art using MuffinMode, the simplest way is to go to the [link above](http://muffinmode.net:8188), and then in the right sidebar, click the dropdown arrow next to the "Load" button. It might be cut off slightly, but select the one called: "Default-Clean." Your workflow page should look something like it does below:
+To make furry art using MuffinMode, the simplest way is to go to the [link above](http://muffinmode.net:8188), and then download [this](https://github.com/noahjgreer/noahjgreer/blob/main/DefaultWorkflow.json) link, then navigate back to the MuffinMode GUI, and in the right sidebar, click the "Load" button. Navigate to your downloads folder, and open up that `DefaultWorkflow.json`. Your workflow page should look something like it does below:
 
 ![MuffinMode Workflow](https://i.imgur.com/2jrluEf.png)
 
