@@ -51,7 +51,7 @@ If you want to use a LoRA model, you can select one from the list. Keep in mind 
 | Character | Model | Description | Trigger Word |
 |-----------|-------|-------------|--------------|
 | Yuley | lora_Yuley-v1.1_3200.safetensors | A LoRA which generates Ulysses, sauce's fursona | `yuley dragon`
-| Finni the Fox | lora_Finni-v1.0-NAI_indigo_7000.safetensors| A LoRA which generates finni the fox! | `f1nni fox`
+| Finni | lora_Finni-v1.0-NAI_indigo_7000.safetensors| A LoRA which generates Finni the fox! | `f1nni fox`
 | Hyper | lora_Hyper-v1.0_IFM_10000.safetensors | A LoRA which generates Hyper the fox. :3 | `hyp3r fox`
 ##### Positive Prompt (Upper Text Box)
 The positive prompt is similar to most AI image generators, in which you will type in what you wish to generate. 
