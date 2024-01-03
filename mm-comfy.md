@@ -5,6 +5,7 @@ MuffinMode is a web server I run on my computer. :3 Its most common public use i
   - [Compared to Bing](#compared-to-bing)
   - [Notes and FAQ](#notes-and-faq)
   - [Getting Started Guide](#getting-started-guide)
+  - [Crafting and Making Prompts](#crafting-and-making-prompts)
 - [Training LoRAs with Dreambooth](#training-loras-with-dreambooth)
   - [What is a LoRA?](#what-is-a-lora)
   - [Big Warning!](#%EF%B8%8F-big-warning)
@@ -73,6 +74,13 @@ The sampler and scheduler determine what methods should be used for the diffusio
 When you've set everything to exactly how you like, you can generate your image by clicking "Queue Prompt" in the top right of your screen. Enjoy! 
 
 If you have any questions, please let me know uwu
+
+## Crafting and Making Prompts
+Prompts are the most important part of creating AI-generated images because they define what data the generator will use to make the image!
+
+### Basics
+In this section, we will breakdown what components make up a prompt. It's fairly simple, and it is lightly covered in the sections above. We'll take a more in-depth look here.
+
 # Training LoRAs with Dreambooth
 ## What is a LoRA?
 To put it simply, a LoRA is a small little model, built on a checkpoint's previous training, that is trained for specific uses. The most common cases for LoRA's are the mimicking of styles, objects, or characters.
