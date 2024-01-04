@@ -1,17 +1,46 @@
 # **MuffinMode**
 MuffinMode is a web server I run on my computer. :3 Its most common public use is for generating stable-diffusion images. It runs on fing called ComfyUI, which is a semi-user-friendly graphical user interface, which gives more control and faster generations compared to alternative generators.
 ## Index
+- [**MuffinMode**](#muffinmode)
+  - [Index](#index)
 - [ComfyUI Image Generation](#comfyui-image-generation)
   - [Compared to Bing](#compared-to-bing)
+    - [Pros:](#pros)
+    - [Cons:](#cons)
   - [Notes and FAQ](#notes-and-faq)
   - [Getting Started Guide](#getting-started-guide)
+    - [Loading the Default Workflow](#loading-the-default-workflow)
+    - [Components of the Workflow](#components-of-the-workflow)
+      - [Loader](#loader)
+        - [The Checkpoint Model (ckpt\_name)](#the-checkpoint-model-ckpt_name)
+        - [LoRA Model (lora\_name)](#lora-model-lora_name)
+        - [Positive Prompt (Upper Text Box)](#positive-prompt-upper-text-box)
+        - [Negative Prompt (Lower Text Box)](#negative-prompt-lower-text-box)
+        - [Empty Latent Sizes (empty\_latent\_with AND empty\_latent\_height)](#empty-latent-sizes-empty_latent_with-and-empty_latent_height)
+      - [Sampler](#sampler)
+        - [Noise Seed (noise\_seed)](#noise-seed-noise_seed)
+        - [Steps (steps)](#steps-steps)
+        - [CFG (cfg)](#cfg-cfg)
+        - [Sampler and Scheduler (sampler\_name AND scheduler)](#sampler-and-scheduler-sampler_name-and-scheduler)
+    - [Generating Your Image](#generating-your-image)
   - [Crafting and Making Prompts](#crafting-and-making-prompts)
+    - [Positive and Negative](#positive-and-negative)
+      - [An excerpt on negative prompting](#an-excerpt-on-negative-prompting)
+    - [How to write prompts](#how-to-write-prompts)
+    - [Keyword strengthening](#keyword-strengthening)
+    - [Detail and Formatting](#detail-and-formatting)
+      - [Little Excerpt on Camera Positions](#little-excerpt-on-camera-positions)
+    - [Bottom Line](#bottom-line)
+    - [Extra Components](#extra-components)
+      - [Using LoRAs](#using-loras)
+      - [Using Embeddings](#using-embeddings)
+    - [Prompts in Action](#prompts-in-action)
 - [Training LoRAs with Dreambooth](#training-loras-with-dreambooth)
   - [What is a LoRA?](#what-is-a-lora)
-  - [Big Warning!](#%EF%B8%8F-big-warning)
-  - [Installing Dreambooth & A1111](#installing-dreambooth--a1111)
+  - [⚠️ Big Warning!](#️-big-warning)
+  - [Installing Dreambooth \& A1111](#installing-dreambooth--a1111)
   - [Preparing Your Dataset](#preparing-your-dataset)
-  - [Preparing To Train](#preparing-to-train)
+  - [Preparing to Train](#preparing-to-train)
   - [Training the LoRA](#training-the-lora)
 # ComfyUI Image Generation
 ## Compared to Bing
@@ -78,8 +107,143 @@ If you have any questions, please let me know uwu
 ## Crafting and Making Prompts
 Prompts are the most important part of creating AI-generated images because they define what data the generator will use to make the image!
 
-### Basics
 In this section, we will breakdown what components make up a prompt. It's fairly simple, and it is lightly covered in the sections above. We'll take a more in-depth look here.
+
+### Positive and Negative
+First, is the text input itself. This is comprised of a **positive** prompt and a **negative** prompt. These two things are very important, and both of them determine how the final image will look! 
+
+Simply put, the **positive** prompt is the text box where you'll put the things you want to see from the AI, and the **negative** prompt is where you will put concepts you don't want to see from the AI. 
+
+![Prompt boxes](https://i.imgur.com/DuQFYc6.png)
+> If you use the workflow that's listed way up above, you will have your positive and negative prompts combined into a single module. The positive prompt is on top, and the negative is on the bottom. If you decide to break everything up and do it from scratch by yourself, you may have these separated into two different nodes!
+
+#### An excerpt on negative prompting
+A little note on negative prompting! Most of the work of the prompt goes into the positive prompt, at least with how I do things, and the negative is only really used to eliminate and tweak undesirable things. For example, the negative prompt I use always starts out with:
+```
+nsfw, boring_e621_fluffyrock_v4, deformityv6, EasyNegative
+```
+
+This is the best way to get rid of anything bad, along with things that are ugly, which is what the embeddings `boring_e621_fluffyrock_v4` and `deformityv6` do. I would highly recommend using that as your base negative prompt as well, adding keywords or concepts as you see fit. It will save you lots of time, unless of course you want to sit down and spend quite a while making a really massive and confusing negative, with lackluster results. 
+
+Let's look at the bare-bones concepts that make up a prompt.
+
+### How to write prompts
+There are schools of thought regarding how to write prompts. The first one is keyword based prompting, and the second being natural based prompting. Personally, I tend to use a mix of these, and I think that's the best way to do it. Let's take a look at these two:
+
+First, keyword based prompting:
+```
+anthro, furry, fox, solo, sitting, happy, blush
+```
+
+Next, natural based prompting:
+```
+An anthropomorphic furry fox sitting by himself, blushing and smiling happily.
+```
+
+To most, it is pretty clear that these two prompts are describing the same thing. And they are! :3 However, to a computer, all of those extra articles, prepositions, and conjunctions such as "An," "by," "and," and even the pronoun "himself" can confuse the AI and make it generate something that deviates slightly from what you want to actually see. 
+
+On the other hand, using only keywords may generate dry results that leave the computer up to using its own interpretation, and might also not lead exactly to what you want to see. 
+
+Thus, we must find a perfect balance! :3 This takes a little tinkering, but I think I would lean toward doing something like this. This provides the AI with simple and concise prompting while still allowing for more natural language use where clarifying concepts matters:
+
+```
+solo, anthro, furry, fox, sitting in a forest, smiling happily, blushing
+```
+
+### Keyword strengthening
+Another important concept is controlling the strength of the keyword. For each word in a prompt, you can control it's strength within the prompt by enclosing it in parenthesis, and adding a colon with a number after it. Here's an example of it using the word `muscular`:
+```
+(muscular:0.25)
+```
+The lower the decimal number, the less strength it will have in the image! By default, this is normally set to `1`, in which case you can simply type the word without any special formatting. But, if you want to make it more or less intense, then I would recommend changing it to fit your needs. Generally, I wouldn't go below 0 or above 2.25 or so, because then the image can begin to look deepfried. 
+
+If this is the case and you still aren't getting what you hoped for, then I would suggest adding the opposite of what you want to see into the negative prompt. More on that in the sections below! For negative prompts, adjusting the strength of a keyword does the same thing as in the positive prompt, but inversed. For example, if you put `skinny` in the negative prompt and adjust it's strength as above, then the higher the strength, the more it will be eliminated from the image. 
+
+A quick tip! If you want to adjust the keyword strength without typing the number or parenthesis, then simply highlight the word with your cursor, and then while pressing the `CTRL` key on your keyboard, press the up and down arrow keys to change the strength accordingly. This is what I usually do to save from tedius typing, and it helps!
+
+
+### Detail and Formatting
+Here we will take a look at the importance of using detail and proper formatting in your prompt. Say perhaps I want an image of an anthro fox in a forest. In greatest simplicity: in the positive prompt I would put:
+```
+anthro fox in a forest
+```
+
+While you could stop here, your results would vary greatly, and usually with AI, you want to start moving closer to what you *want* to see, eliminating things you don't want to see. Try describing the artstyle, the scenery, and the use of colors throughout the image. As you work on doing these things, split them up into sections based on their focus. AI pays attention to prompts in spurts interest every 75 words, and this can help better collate these focuses, and also make it easier to read.
+
+Depending on how you want to lay out your focus sections is up to you, but I usually work my way from broad concepts inward. Here's an example of that:
+```
+(best quality:1.1), masterpiece, warm vivid colors, detailed shading, gorgeous lighting, best eyes, digital art, kemono style
+
+outdoors, autumn, cozy, realistic fur, (chibi:0.45), paws, side shot
+
+male, solo, anthro, (small:0.65), f1nni fox, white angelic wings, heterochromia with yellow and blue, (gold halo:1.15), (lean:0.85), cute, huge fluffy tail, short head hair, wearing a (red bandana:1.1), blue stripedsocks, cute pose, sitting in a pile of leaves, arms in the air, happy, mouth open, eyes closed, (blush:1.1)
+```
+
+Let's break down this pattern:
+```
+[OVERALL ASPECTS]
+
+[BACKGROUND AND VAGUE CONCEPTS]
+
+[SUBJECT]
+```
+So, the prompt begins with the overall aspects of the piece, such as how it will look and be displayed in the image. Next comes the background, along with some vague overarching concepts, like camera angles and such. As you can see, I also put paws in there because the image was generating hands and I didn't want that, but you can also just stick `hands` into the negative to fix this as well. 
+
+#### Little Excerpt on Camera Positions
+If you want to control the camera's position, or the type of shot you want, determining how the subject will fill the frame, try using one of these keywords in your prompt:
+```
+side shot, half-body shot, full shot, front shot, back shot, top down, bottom up, close up, far away, zoomed in, zoomed out, portrait, landscape, square, wide, tall, vertical, horizontal, diagonal, 3/4 view, 1/4 view, 1/2 view
+```
+
+### Bottom Line
+In reality, there is no true proper way to prompt, and I am still learning myself! This is a great opportunity to tinker around with words, move things around, and learn how things work, too!
+
+Since the AI has certain moments of focus, your positioning of words within the prompt can greatly affect how the image will look! If you want your subject to have the most attention, then maybe try flipping the section focusing on it's head, starting with the details and working out to the big picture.
+
+### Extra Components
+There are some extra things that you can put into your prompt to make it extra snazzy! 😎
+
+While you can make a perfectly good prompt on your own with just text, you can add in the things below to add extra flare into your generations, and make life easier for you!
+
+#### Using LoRAs
+I made a little section on how to use Loras above, but this section here will focus on their use within the prompt a little more and re-cover the concepts while also building upon them.
+
+First off, a LoRA is a small mini-model trained on subjects or concepts and can be used within generation to cleanly bundle together those things, while also retaining the original look or subject it was trained on.
+
+For instance, in the prompt above in the section on Detail and Formatting, there were ***three*** loras at use that you might not have even noticed!: `f1nni fox`, `heterochromia with yellow and blue`, and `blue stripedsocks` were all taking advantage of LoRAs! Now, these can't just be used automatically, you have to load them in. Some LoRA's might not work with certain models; it depends on what model they were trained on. It might take some experimenting to find out! :3
+
+By default, you can only load 1 lora at a time into the efficient loader nodule, but if you look at the top left of that same node, you can find a lora_stack bubble. If you click and drag from it, outside of it, you can select `LoRA Stacker`! Doing this will allow you to use multiple LoRAs at once. 
+
+To load them in, simply click on the respective `lora_name` bubbles, and the select the LoRA you want. If you have a LoRA you want to add, please send me a DM @finnithefox on Discord! You can search for LoRAs on [CivitAI](https://civitai.com/search/models?modelType=LORA)! Make sure to also change the weight for each Lora, this will determine it's strength in the prompt. 
+
+To use a LoRA, you must trigger it within your prompt. This is usually a word or two, or many, that tell the LoRA to kick in! You can find some of these trigger words in the [LoRAs section in the introduction.](#lora-model-lora_name)
+
+#### Using Embeddings
+Similar to LoRA's, there's embeddings. Embeddings are like LoRAs except you don't have to import them! Well, there's a little bit more of difference than that, but it's still pretty similar!
+
+The only embeddings stored on MuffinMode right now are just the `boring_e621_fluffyrock_v4`, `EasyNegative`, and `deformityv6`, embeddings seen in the [excerpt on negative prompts](#an-excerpt-on-negative-prompting).
+
+Since this list is always changing, I would recommend double clicking somewhere in the workflow, and searching for "Embedding Picker". This will allow you to see all of the available embeddings, and can prove to be very helpful when you're trying to find the right one for your prompt! :3 When it comes time to use them in your prompt, simply type their filename, without the `.pt`, either in the positive or negative prompt, and it will work!
+
+
+### Prompts in Action
+To cut to the chase, here's a prompt I made recently that generates some cute results. This prompting uses all the stuff we've talked about above, and it's a great example of how to use it all together! :3
+
+> Positive Prompt:
+```
+(best quality:1.1), medium close up, side shot, warm vivid colors, best eyes, masterpiece, soft cozy lighting, indoors, autumn, cozy, realistic fur, (chibi:0.45), paws, side shot, soft shading
+
+male, solo, anthro, (small:0.65), f1nni fox, white folded angelic wings, holding a cup of hot cocoa, heterochromia with yellow and blue, (gold halo:1.15), (lean:0.85), (twink:1.15), (femboy:1.2), cute, huge fluffy tail, no head hair, wearing a (red bandana:1.1), cute pose, looking outside, happy, blushing, wearing cozy maroon sweater, sitting on a pillow next to a window
+```
+> Negative Prompt
+```
+human hands, full body shot, head hair, nsfw, (masculine:0.25), boring_e621_fluffyrock_v4, deformityv6, EasyNegative
+```
+Here are the results! I generated 10 images, and these were my 8 favorites. Yes, there are a lot of discrepancies, but I did change the prompt after the first attempt, and then also through generation, and I feel happy with the results.
+
+![Finni Generations](https://i.imgur.com/SKBkCYl.jpg)
+
+Now that you've learned about prompting, go give it a try for yourself! Can't wait to see what you make! :3 🧡
 
 # Training LoRAs with Dreambooth
 ## What is a LoRA?
