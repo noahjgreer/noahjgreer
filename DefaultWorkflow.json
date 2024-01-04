@@ -356,7 +356,7 @@
         0.73,
         0.70,
         "masterpiece, highres, medium shot, shallow depth of field, back focus,\n\nsolo, furry, anthro, fox,\n\nbeautiful background, nature",
-        "nsfw, boring_e621_fluffyrock_v4, deformityv6",
+        "nsfw, boring_e621_fluffyrock_v4, deformityv6, EasyNegative",
         "none",
         "comfy",
         832,
