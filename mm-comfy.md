@@ -265,7 +265,7 @@ MuffinMode offers a wide selection of models, and here I will provide their name
 >
 > **Positive:**
 > ```
-> masterpiece, high quality, best eyes, absurd res, soft lighting, nude, (front view:0.7), extreme close-up, (sideview:0.6), bust portrait, paws,
+> masterpiece, high quality, best eyes, absurd res, soft lighting, (front view:0.7), extreme close-up, (sideview:0.6), bust portrait, paws,
 > 
 > solo, anthro, (kemono:0.4), twink, fox, (cute:1.1), (orange body), big tail, red bandana, purple sweater, hotpants, looking aside, blushing, happy, sitting against rock,
 >  
