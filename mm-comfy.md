@@ -35,6 +35,10 @@ MuffinMode is a web server I run on my computer. :3 Its most common public use i
       - [Using LoRAs](#using-loras)
       - [Using Embeddings](#using-embeddings)
     - [Prompts in Action](#prompts-in-action)
+  - [Model Details](#model-details)
+    - [Best Standard Furry Models](#best-standard-furry-models)
+    - [Best SDXL Models](#best-sdxl-models)
+    - [Other Standard Models](#other-standard-models)
 - [Training LoRAs with Dreambooth](#training-loras-with-dreambooth)
   - [What is a LoRA?](#what-is-a-lora)
   - [⚠️ Big Warning!](#️-big-warning)
@@ -244,6 +248,51 @@ Here are the results! I generated 10 images, and these were my 8 favorites. Yes,
 ![Finni Generations](https://i.imgur.com/SKBkCYl.jpg)
 
 Now that you've learned about prompting, go give it a try for yourself! Can't wait to see what you make! :3 🧡
+
+## Model Details
+MuffinMode offers a wide selection of models, and here I will provide their names and best uses. The best ones will be placed in their own section, here at the top! The other models will have their own table below it.
+
+### Best Standard Furry Models
+| Model Name | Identifier | Use | Example | 
+|------------|------------|-----|---------|
+| Indigo Furry Mix - Hybrid | `indigoFurryMix_v105Hybrid` | Best for detailed digital furry art | ![IFM-H Example](https://i.imgur.com/HiV9QRe.png) |
+| Indigo Furry Mix - Realistic | `indigoFurryMix_v95Realistic` | Best for detailed realistic furry art | ![IFM-R Example](https://i.imgur.com/hUMERVh.png) |
+| Indigo Furry Mix - Anime | `indigoFurryMix_v95Anime` | Best for detailed anime furry art | ![IFM-A Example](https://i.imgur.com/kRmO7T1.png) |
+| Indigo Kemono Mix | `indigoKemonoMix_delta` | Best for the *cutest~* detailed kemono furry art | ![IKM Example](https://i.imgur.com/J8VhQwV.png) |
+| Indigo Comic | `indigoComic_v10withvae` | Best for detailed comic furry art | ![IC Example](https://i.imgur.com/VEyBunQ.png) |
+| Fluffy Kemono V2 | `fluffyKemono_v2` | Good for kemono furry art | ![FK Example](https://i.imgur.com/Gh84EsS.png) |
+> For those wondering, here is the positive and negative for the images generated in the section above. All used the same seed and generation settings, the only thing that was different was the model. :3
+>
+> **Positive:**
+> ```
+> masterpiece, high quality, best eyes, absurd res, soft lighting, nude, (front view:0.7), extreme close-up, (sideview:0.6), bust portrait, paws,
+> 
+> solo, anthro, (kemono:0.4), twink, fox, (cute:1.1), (orange body), big tail, red bandana, purple sweater, hotpants, looking aside, blushing, happy, sitting against rock,
+>  
+> field, cloud, mountains, daytime, grass, flower, (blurred background:0.6), 
+> 
+> panorama, portrait, 135mm, character focus. (detailed background, amazing background), outdoors, scenery, light particles
+> ```
+> **Negative:**
+> ```
+> rear view, multi tail, humanoid hands, nsfw, boring_e621_fluffyrock_v4, deformityv6, EasyNegative
+> ```
+
+
+### Best SDXL Models
+| Model Name | Identifier | Use | Example |
+|------------|------------|-----|---------|
+| Furry Art Fantasy XL Mix | `furryArtFantasyXLMix_v03Beta` | A different approach to detailed furry art, I would still recommend using the standard models instead. | ![FAFXL Example](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d49069dd-f7e9-4280-99c7-ad44fc811745/original=true/00009-3630117716.jpeg) |
+| Stable Diffusion XL | `sd_xl_base_1.0` | An model for anything, not particularly for furry art. | ![SDXL Example](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/9b32c2c3-88e3-464f-a63a-959877975e25/original=true/ComfyUI_00341_.jpeg) |
+
+### Other Standard Models
+| Model Name | Identifier | Use |
+|------------|------------|-----|
+| Fluffyrock Kemono Fusion | `Fluffyrockkemonofusion` | Okay for kemono furry art, can be a little wonky. |
+| AniReality-Mix | `anirealityMix_v1` | Good for anime art |
+| Niji V5 Style | `nijiv5style_v10` | Good for anime art |
+| Photon | `photon_v1` | A model for everything, not particularly for furry art. |
+| Stable Diffusion v2.1 | `v2-1_768-nonema-pruned` | A model for everything, not particularly for furry art. Not as good as SDXL |
 
 # Training LoRAs with Dreambooth
 ## What is a LoRA?
