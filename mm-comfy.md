@@ -1,5 +1,5 @@
 # **MuffinMode**
-MuffinMode is a web server I run on my computer. :3 Its most common public use is for generating stable-diffusion images. It runs on fing called ComfyUI, which is a semi-user-friendly graphical user interface, which gives more control and faster generations compared to alternative generators.
+[MuffinMode](http://muffinmode.net:8188) is a web server I run on my computer. :3 Its most common public use is for generating stable-diffusion images. It runs on fing called ComfyUI, which is a semi-user-friendly graphical user interface, which gives more control and faster generations compared to alternative generators.
 ## Index
 - [**MuffinMode**](#muffinmode)
   - [Index](#index)
