@@ -1,0 +1,1317 @@
+2025/06/09 17:45:41 ...s/process/manager.go:231:remove() [T] Done 68476414-6: Logger: EventWriter: console-default
+2025/06/09 17:45:41 ...s/storage/storage.go:176:initAttachments() [I] Initialising Attachment storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\attachments
+2025/06/09 17:45:41 ...s/storage/storage.go:166:initAvatars() [I] Initialising Avatar storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\avatars
+2025/06/09 17:45:41 ...s/storage/storage.go:192:initRepoAvatars() [I] Initialising Repository Avatar storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-avatars
+2025/06/09 17:45:41 ...s/storage/storage.go:186:initLFS() [I] Initialising LFS storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at F:/LocalGit/lfs-data
+2025/06/09 17:45:41 ...s/storage/storage.go:198:initRepoArchives() [I] Initialising Repository Archive storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-archive
+2025/06/09 17:45:41 ...s/storage/storage.go:208:initPackages() [I] Initialising Packages storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\packages
+2025/06/09 17:45:41 ...s/storage/storage.go:219:initActions() [I] Initialising Actions storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_log
+2025/06/09 17:45:41 ...s/storage/storage.go:223:initActions() [I] Initialising ActionsArtifacts storage with type: local
+2025/06/09 17:45:41 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_artifacts
+2025/06/09 17:45:41 ...queue/workerqueue.go:231:]() [T] Created queue "notification-service" of type "level"
+2025/06/09 17:45:41 ...s/process/manager.go:188:Add() [T] Start 68476415-25: Queue: notification-service (system)
+2025/06/09 17:45:41 ...queue/workergroup.go:294:doRun() [D] Queue "notification-service" starts running
+2025/06/09 17:45:41 ...queue/workerqueue.go:231:]() [T] Created queue "repo-archive" of type "level"
+2025/06/09 17:45:41 ...s/process/manager.go:188:Add() [T] Start 68476415-26: Queue: repo-archive (system)
+2025/06/09 17:45:41 ...queue/workergroup.go:294:doRun() [D] Queue "repo-archive" starts running
+2025/06/09 17:45:41 routers/init.go:139:InitWebInstalled() [I] SQLite3 support is enabled
+2025/06/09 17:45:41 routers/common/db.go:23:InitDBEngine() [I] Beginning ORM engine initialization.
+2025/06/09 17:45:41 routers/common/db.go:30:InitDBEngine() [I] ORM engine initialization attempt #1/10...
+2025/06/09 17:45:41 cmd/web.go:205:serveInstalled() [I] PING DATABASE sqlite3
+2025/06/09 17:45:41 cmd/web.go:205:serveInstalled() [W] Table system_setting Column version db default is , struct default is 1
+2025/06/09 17:45:41 routers/init.go:145:InitWebInstalled() [I] ORM engine initialization successful!
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "tag_sync" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418: Queue: tag_sync (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "tag_sync" starts running
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "repo_license_updater" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-2: Queue: repo_license_updater (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "repo_license_updater" starts running
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "push_update" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-3: Queue: push_update (system)
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "branch_sync" of type "level"
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "push_update" starts running
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-4: Queue: branch_sync (system)
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-5: Service: IssueIndexer (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "branch_sync" starts running
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "issue_indexer" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-6: Queue: issue_indexer (from 68476418-5) (system)
+2025/06/09 17:45:44 ...er/issues/indexer.go:76:func1() [I] PID 6724: Initializing Issue Indexer: bleve
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "repo_stats_update" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-7: Queue: repo_stats_update (system)
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "mirror" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-8: Queue: mirror (system)
+2025/06/09 17:45:44 ...xer/stats/indexer.go:41:populateRepoIndexer() [I] Populating the repo stats indexer with existing repositories
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "repo_stats_update" starts running
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "mirror" starts running
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "webhook_sender" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-9: Queue: webhook_sender (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "webhook_sender" starts running
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-10: Webhook: Populate sending queue (normal)
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "pr_patch_checker" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-11: Queue: pr_patch_checker (system)
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "pr_auto_merge" of type "level"
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "pr_patch_checker" starts running
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-12: Queue: pr_auto_merge (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "pr_auto_merge" starts running
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "task" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-13: Queue: task (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "task" starts running
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-14: Service: EventSource (system)
+2025/06/09 17:45:44 ...s/process/manager.go:231:remove() [T] Done 68476418-10: Webhook: Populate sending queue
+2025/06/09 17:45:44 ...xer/stats/indexer.go:87:populateRepoIndexer() [I] Done (re)populating the repo stats indexer with existing repositories
+2025/06/09 17:45:44 routers/init.go:86:syncAppConfForGit() [I] AppPath changed from 'C:/Users/Administrator/Downloads/gitea-1.23.8-gogit-windows-4.0-amd64.exe' to 'F:/LocalGit/gitea/gitea-1.23.8-gogit-windows-4.0-amd64.exe'
+2025/06/09 17:45:44 routers/init.go:91:syncAppConfForGit() [I] CustomConf changed from 'C:\Users\Administrator\Downloads\custom\conf\app.ini' to 'F:\LocalGit\gitea\custom\conf\app.ini'
+2025/06/09 17:45:44 routers/init.go:97:syncAppConfForGit() [I] re-sync repository hooks ...
+2025/06/09 17:45:44 .../repository/hooks.go:23:SyncRepositoryHooks() [T] Doing: SyncRepositoryHooks
+2025/06/09 17:45:44 .../repository/hooks.go:49:SyncRepositoryHooks() [T] Finished: SyncRepositoryHooks
+2025/06/09 17:45:44 routers/init.go:100:syncAppConfForGit() [I] re-write ssh public keys ...
+2025/06/09 17:45:44 ...er/issues/indexer.go:153:func2() [I] Issue Indexer Initialization took 16.7272ms
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "issue_indexer" starts running
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-15: Service: PopulateIssueIndexer (system)
+2025/06/09 17:45:44 ...er/issues/indexer.go:230:PopulateIssueIndexer() [D] Issue Indexer population complete
+2025/06/09 17:45:44 ...s/process/manager.go:231:remove() [T] Done 68476418-15: Service: PopulateIssueIndexer
+2025/06/09 17:45:44 ...queue/workerqueue.go:231:]() [T] Created queue "actions_ready_job" of type "level"
+2025/06/09 17:45:44 ...s/process/manager.go:188:Add() [T] Start 68476418-16: Queue: actions_ready_job (system)
+2025/06/09 17:45:44 ...queue/workergroup.go:294:doRun() [D] Queue "actions_ready_job" starts running
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419: Service: Cron (system)
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_mirrors
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: repo_health_check
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: check_repo_stats
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: archive_cleanup
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_external_users
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: deleted_branches_cleanup
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_migration_poster_id
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_hook_task_table
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_packages
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_repo_licenses
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_inactive_accounts
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_repo_archives
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: git_gc_repos
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshkeys
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshprincipals
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_hooks
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: reinit_missing_repos
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_missing_repos
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_generated_repository_avatars
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_actions
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_checker
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_system_notices
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: gc_lfs
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: rebuild_issue_indexer
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_zombie_tasks
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_endless_tasks
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cancel_abandoned_jobs
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: start_schedule_tasks
+2025/06/09 17:45:45 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_actions
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-3: Cron: Cleanup expired packages (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-4: Cron: Delete old repository archives (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-2: Cron: Clean-up deleted branches (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-6: Cron: Stop actions zombie tasks (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-5: Cron: Check all repository statistics (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-7: Cron: Stop actions endless tasks (normal)
+2025/06/09 17:45:45 ...archiver/archiver.go:324:DeleteOldRepositoryArchives() [T] Doing: ArchiveCleanup
+2025/06/09 17:45:45 models/git/branch.go:300:RemoveOldDeletedBranches() [T] Doing: DeletedBranchesCleanup
+2025/06/09 17:45:45 models/repo.go:145:CheckRepoStats() [T] Doing: CheckRepoStats
+2025/06/09 17:45:45 ...ates/htmlrenderer.go:115:initHTMLRenderer() [D] Creating static HTML Renderer
+2025/06/09 17:45:45 ...archiver/archiver.go:349:DeleteOldRepositoryArchives() [T] Finished: ArchiveCleanup
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-4: Cron: Delete old repository archives
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-8: Cron: Cancel actions abandoned jobs (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-8: Cron: Cancel actions abandoned jobs
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-9: Cron: Update migration poster IDs (normal)
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-7: Cron: Stop actions endless tasks
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-6: Cron: Stop actions zombie tasks
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-3: Cron: Cleanup expired packages
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-2: Cron: Clean-up deleted branches
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-5: Cron: Check all repository statistics
+2025/06/09 17:45:45 ...s/process/manager.go:231:remove() [T] Done 68476419-9: Cron: Update migration poster IDs
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-10: Service: SlowQueryDetector (system)
+2025/06/09 17:45:45 ...s/process/manager.go:188:Add() [T] Start 68476419-11: Web: Gitea Server (system)
+2025/06/09 17:45:45 cmd/web.go:315:listen() [I] Listen: http://0.0.0.0:3000
+2025/06/09 17:45:45 cmd/web.go:319:listen() [I] AppURL(ROOT_URL): https://git.muffinmode.net/
+2025/06/09 17:45:45 cmd/web.go:322:listen() [I] LFS server enabled
+2025/06/09 17:45:45 ...s/graceful/server.go:50:NewServer() [I] Starting new Web server: tcp:0.0.0.0:3000 on PID: 6724
+2025/06/09 17:45:45 ...s/graceful/server.go:63:func1() [D] Starting server on tcp:0.0.0.0:3000 (PID: 6724)
+2025/06/09 17:45:45 ...l/manager_windows.go:74:Execute() [T] Sending Running state to SVC
+2025/06/09 17:45:45 ...l/manager_windows.go:82:Execute() [T] Started
+2025/06/09 17:45:54 ...ource/manager_run.go:46:Run() [T] Event source has no listeners
+2025/06/09 17:45:54 ...ource/manager_run.go:56:Run() [T] Pausing the eventsource
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425: GET: / (request)
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET / for [::1]:53845
+2025/06/09 17:45:57 .../context_response.go:70:HTML() [D] Template: home
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [I] router: completed GET / for [::1]:53845, 200 OK in 5.0ms @ web/home.go:32(web.Home)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425: GET: /
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-2: GET: /assets/js/webcomponents.js?v=1.23.8 (request)
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/js/webcomponents.js?v=1.23.8 for [::1]:53845
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/js/webcomponents.js?v=1.23.8 for [::1]:53845, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-2: GET: /assets/js/webcomponents.js?v=1.23.8
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-4: GET: /assets/css/theme-gitea-auto.css?v=1.23.8 (request)
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-3: GET: /assets/css/index.css?v=1.23.8 (request)
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/css/index.css?v=1.23.8 for [::1]:53846
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/css/theme-gitea-auto.css?v=1.23.8 for [::1]:53847
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/css/theme-gitea-auto.css?v=1.23.8 for [::1]:53847, 200 OK in 0.0ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-5: GET: /assets/js/index.js?v=1.23.8 (request)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-4: GET: /assets/css/theme-gitea-auto.css?v=1.23.8
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/js/index.js?v=1.23.8 for [::1]:53848
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/css/index.css?v=1.23.8 for [::1]:53846, 200 OK in 0.6ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-3: GET: /assets/css/index.css?v=1.23.8
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-6: GET: /assets/img/logo.svg (request)
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/img/logo.svg for [::1]:53849
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/img/logo.svg for [::1]:53849, 200 OK in 0.2ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/js/index.js?v=1.23.8 for [::1]:53848, 200 OK in 1.3ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-6: GET: /assets/img/logo.svg
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-5: GET: /assets/js/index.js?v=1.23.8
+2025/06/09 17:45:57 ...s/process/manager.go:188:Add() [T] Start 68476425-7: GET: /assets/img/favicon.png (request)
+2025/06/09 17:45:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/img/favicon.png for [::1]:53848
+2025/06/09 17:45:57 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/img/favicon.png for [::1]:53848, 200 OK in 0.0ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:45:57 ...s/process/manager.go:231:remove() [T] Done 68476425-7: GET: /assets/img/favicon.png
+2025/06/09 17:46:15 ...s/process/manager.go:188:Add() [T] Start 68476437: GET: / (request)
+2025/06/09 17:46:15 ...eb/routing/logger.go:47:func1() [T] router: started   GET / for 192.168.1.163:57718
+2025/06/09 17:46:15 .../context_response.go:70:HTML() [D] Template: home
+2025/06/09 17:46:15 ...eb/routing/logger.go:102:func1() [I] router: completed GET / for 192.168.1.163:57718, 200 OK in 1.0ms @ web/home.go:32(web.Home)
+2025/06/09 17:46:15 ...s/process/manager.go:231:remove() [T] Done 68476437: GET: /
+2025/06/09 17:46:45 ...s/process/manager.go:188:Add() [T] Start 68476455: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:46:45 ...s/process/manager.go:231:remove() [T] Done 68476455: Cron: Start actions schedule tasks
+2025/06/09 17:47:45 ...s/process/manager.go:188:Add() [T] Start 68476491: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:47:45 ...s/process/manager.go:231:remove() [T] Done 68476491: Cron: Start actions schedule tasks
+2025/06/09 17:48:45 ...s/process/manager.go:188:Add() [T] Start 684764cd: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:48:45 ...s/process/manager.go:231:remove() [T] Done 684764cd: Cron: Start actions schedule tasks
+2025/06/09 17:49:45 ...s/process/manager.go:188:Add() [T] Start 68476509: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:49:45 ...s/process/manager.go:231:remove() [T] Done 68476509: Cron: Start actions schedule tasks
+2025/06/09 17:50:45 ...s/process/manager.go:188:Add() [T] Start 68476545: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:50:45 ...s/process/manager.go:188:Add() [T] Start 68476545-2: Cron: Stop actions zombie tasks (normal)
+2025/06/09 17:50:45 ...s/process/manager.go:231:remove() [T] Done 68476545-2: Cron: Stop actions zombie tasks
+2025/06/09 17:50:45 ...s/process/manager.go:231:remove() [T] Done 68476545: Cron: Start actions schedule tasks
+2025/06/09 17:51:45 ...s/process/manager.go:188:Add() [T] Start 68476581: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:51:45 ...s/process/manager.go:231:remove() [T] Done 68476581: Cron: Start actions schedule tasks
+2025/06/09 17:52:20 ...l/manager_windows.go:104:Execute() [T] SVC requested shutdown - shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "repo-archive" is shutting down
+2025/06/09 17:52:20 ...l/manager_windows.go:119:Execute() [T] Sending StopPending state to SVC
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "push_update" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "repo_stats_update" is shutting down
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418: Queue: tag_sync
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-3: Queue: push_update
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "pr_patch_checker" is shutting down
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-2: Queue: repo_license_updater
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-7: Queue: repo_stats_update
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "notification-service" is shutting down
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-4: Queue: branch_sync
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476415-25: Queue: notification-service
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "push_update" stops running
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-11: Queue: pr_patch_checker
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "tag_sync" is shutting down
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-14: Service: EventSource
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-8: Queue: mirror
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "notification-service" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "repo_stats_update" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "mirror" is shutting down
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476419-10: Service: SlowQueryDetector
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "tag_sync" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "pr_auto_merge" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "mirror" stops running
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-9: Queue: webhook_sender
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "webhook_sender" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "repo_license_updater" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "webhook_sender" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "repo_license_updater" stops running
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-12: Queue: pr_auto_merge
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-13: Queue: task
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476419: Service: Cron
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-6: Queue: issue_indexer
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "issue_indexer" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "pr_patch_checker" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "issue_indexer" stops running
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476418-16: Queue: actions_ready_job
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "branch_sync" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "actions_ready_job" is shutting down
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "pr_auto_merge" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:349:doRun() [D] Queue "task" is shutting down
+2025/06/09 17:52:20 ...s/graceful/server.go:156:Serve() [D] Waiting for connections to finish... (PID: 6724)
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "branch_sync" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "actions_ready_job" stops running
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "task" stops running
+2025/06/09 17:52:20 ...s/graceful/server.go:162:Serve() [D] Serve() returning... (PID: 6724)
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476415-26: Queue: repo-archive
+2025/06/09 17:52:20 cmd/web.go:366:listen() [I] HTTP Listener: 0.0.0.0:3000 Closed
+2025/06/09 17:52:20 ...eful/server_hooks.go:46:doShutdown() [I] PID: 6724 Listener ([::]:3000) closed.
+2025/06/09 17:52:20 ...s/process/manager.go:231:remove() [T] Done 68476419-11: Web: Gitea Server
+2025/06/09 17:52:20 ...queue/workergroup.go:350:doRun() [D] Queue "repo-archive" stops running
+2025/06/09 17:52:20 .../graceful/manager.go:168:doHammerTime() [W] Setting Hammer condition
+2025/06/09 17:52:20 ...l/manager_windows.go:145:Execute() [T] Stopped
+2025/06/09 17:52:21 .../graceful/manager.go:184:doTerminate() [W] Terminating
+2025/06/09 17:52:21 ...er/issues/indexer.go:118:2() [D] Closing issue indexer
+2025/06/09 17:52:21 ...s/process/manager.go:231:remove() [T] Done 68476418-5: Service: IssueIndexer
+2025/06/09 17:52:21 ...er/issues/indexer.go:120:2() [I] PID: 6724 Issue Indexer closed
+2025/06/09 17:52:21 cmd/web.go:225:serveInstalled() [I] PID: 6724 Gitea Web Finished
+2025/06/09 17:56:48 ...s/process/manager.go:231:remove() [T] Done 684766af-6: Logger: EventWriter: console-default
+2025/06/09 17:56:48 ...s/storage/storage.go:176:initAttachments() [I] Initialising Attachment storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\attachments
+2025/06/09 17:56:48 ...s/storage/storage.go:166:initAvatars() [I] Initialising Avatar storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\avatars
+2025/06/09 17:56:48 ...s/storage/storage.go:192:initRepoAvatars() [I] Initialising Repository Avatar storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-avatars
+2025/06/09 17:56:48 ...s/storage/storage.go:186:initLFS() [I] Initialising LFS storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at F:/LocalGit/lfs-data
+2025/06/09 17:56:48 ...s/storage/storage.go:198:initRepoArchives() [I] Initialising Repository Archive storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-archive
+2025/06/09 17:56:48 ...s/storage/storage.go:208:initPackages() [I] Initialising Packages storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\packages
+2025/06/09 17:56:48 ...s/storage/storage.go:219:initActions() [I] Initialising Actions storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_log
+2025/06/09 17:56:48 ...s/storage/storage.go:223:initActions() [I] Initialising ActionsArtifacts storage with type: local
+2025/06/09 17:56:48 ...les/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_artifacts
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "notification-service" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-19: Queue: notification-service (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "notification-service" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "repo-archive" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-20: Queue: repo-archive (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "repo-archive" starts running
+2025/06/09 17:56:48 routers/init.go:139:InitWebInstalled() [I] SQLite3 support is enabled
+2025/06/09 17:56:48 routers/common/db.go:23:InitDBEngine() [I] Beginning ORM engine initialization.
+2025/06/09 17:56:48 routers/common/db.go:30:InitDBEngine() [I] ORM engine initialization attempt #1/10...
+2025/06/09 17:56:48 cmd/web.go:205:serveInstalled() [I] PING DATABASE sqlite3
+2025/06/09 17:56:48 cmd/web.go:205:serveInstalled() [W] Table system_setting Column version db default is , struct default is 1
+2025/06/09 17:56:48 routers/init.go:145:InitWebInstalled() [I] ORM engine initialization successful!
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "tag_sync" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-21: Queue: tag_sync (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "tag_sync" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "repo_license_updater" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-22: Queue: repo_license_updater (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "repo_license_updater" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "push_update" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-23: Queue: push_update (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "push_update" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "branch_sync" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-24: Queue: branch_sync (system)
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-25: Service: IssueIndexer (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "branch_sync" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "issue_indexer" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-26: Queue: issue_indexer (from 684766b0-25) (system)
+2025/06/09 17:56:48 ...er/issues/indexer.go:76:func1() [I] PID 5140: Initializing Issue Indexer: bleve
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "repo_stats_update" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-27: Queue: repo_stats_update (system)
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "mirror" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-28: Queue: mirror (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "repo_stats_update" starts running
+2025/06/09 17:56:48 ...xer/stats/indexer.go:41:populateRepoIndexer() [I] Populating the repo stats indexer with existing repositories
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "mirror" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "webhook_sender" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-29: Queue: webhook_sender (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "webhook_sender" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "pr_patch_checker" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-30: Queue: pr_patch_checker (system)
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-31: Webhook: Populate sending queue (normal)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "pr_patch_checker" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "pr_auto_merge" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-32: Queue: pr_auto_merge (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "pr_auto_merge" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "task" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-33: Queue: task (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "task" starts running
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-34: Service: EventSource (system)
+2025/06/09 17:56:48 ...s/process/manager.go:231:remove() [T] Done 684766b0-31: Webhook: Populate sending queue
+2025/06/09 17:56:48 ...xer/stats/indexer.go:87:populateRepoIndexer() [I] Done (re)populating the repo stats indexer with existing repositories
+2025/06/09 17:56:48 ...er/issues/indexer.go:153:func2() [I] Issue Indexer Initialization took 0s
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "issue_indexer" starts running
+2025/06/09 17:56:48 ...queue/workerqueue.go:231:]() [T] Created queue "actions_ready_job" of type "level"
+2025/06/09 17:56:48 ...s/process/manager.go:188:Add() [T] Start 684766b0-35: Queue: actions_ready_job (system)
+2025/06/09 17:56:48 ...queue/workergroup.go:294:doRun() [D] Queue "actions_ready_job" starts running
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1: Service: Cron (system)
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_mirrors
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: repo_health_check
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: check_repo_stats
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: archive_cleanup
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_external_users
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: deleted_branches_cleanup
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_migration_poster_id
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_hook_task_table
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_packages
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_repo_licenses
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_inactive_accounts
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_repo_archives
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: git_gc_repos
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshkeys
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshprincipals
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_hooks
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: reinit_missing_repos
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_missing_repos
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_generated_repository_avatars
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_actions
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: update_checker
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_system_notices
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: gc_lfs
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: rebuild_issue_indexer
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_zombie_tasks
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_endless_tasks
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cancel_abandoned_jobs
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: start_schedule_tasks
+2025/06/09 17:56:49 ...rvices/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_actions
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-2: Cron: Clean-up deleted branches (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-6: Cron: Stop actions zombie tasks (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-3: Cron: Delete old repository archives (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-4: Cron: Cleanup expired packages (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-5: Cron: Stop actions endless tasks (normal)
+2025/06/09 17:56:49 ...archiver/archiver.go:324:DeleteOldRepositoryArchives() [T] Doing: ArchiveCleanup
+2025/06/09 17:56:49 models/git/branch.go:300:RemoveOldDeletedBranches() [T] Doing: DeletedBranchesCleanup
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-7: Cron: Check all repository statistics (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-8: Cron: Cancel actions abandoned jobs (normal)
+2025/06/09 17:56:49 models/repo.go:145:CheckRepoStats() [T] Doing: CheckRepoStats
+2025/06/09 17:56:49 ...ates/htmlrenderer.go:115:initHTMLRenderer() [D] Creating static HTML Renderer
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-5: Cron: Stop actions endless tasks
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-9: Cron: Update migration poster IDs (normal)
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-2: Cron: Clean-up deleted branches
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-6: Cron: Stop actions zombie tasks
+2025/06/09 17:56:49 ...archiver/archiver.go:349:DeleteOldRepositoryArchives() [T] Finished: ArchiveCleanup
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-3: Cron: Delete old repository archives
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-8: Cron: Cancel actions abandoned jobs
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-7: Cron: Check all repository statistics
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-4: Cron: Cleanup expired packages
+2025/06/09 17:56:49 ...s/process/manager.go:231:remove() [T] Done 684766b1-9: Cron: Update migration poster IDs
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-10: Service: SlowQueryDetector (system)
+2025/06/09 17:56:49 ...s/process/manager.go:188:Add() [T] Start 684766b1-11: Web: Gitea Server (system)
+2025/06/09 17:56:49 cmd/web.go:315:listen() [I] Listen: http://0.0.0.0:3000
+2025/06/09 17:56:49 cmd/web.go:319:listen() [I] AppURL(ROOT_URL): https://git.muffinmode.net/
+2025/06/09 17:56:49 cmd/web.go:322:listen() [I] LFS server enabled
+2025/06/09 17:56:49 ...s/graceful/server.go:50:NewServer() [I] Starting new Web server: tcp:0.0.0.0:3000 on PID: 5140
+2025/06/09 17:56:49 ...s/graceful/server.go:63:func1() [D] Starting server on tcp:0.0.0.0:3000 (PID: 5140)
+2025/06/09 17:56:49 ...l/manager_windows.go:74:Execute() [T] Sending Running state to SVC
+2025/06/09 17:56:49 ...l/manager_windows.go:82:Execute() [T] Started
+2025/06/09 17:56:57 ...s/process/manager.go:188:Add() [T] Start 684766b9: GET: / (request)
+2025/06/09 17:56:57 ...eb/routing/logger.go:47:func1() [T] router: started   GET / for 192.168.1.163:0
+2025/06/09 17:56:57 .../context_response.go:70:HTML() [D] Template: home
+2025/06/09 17:56:57 ...eb/routing/logger.go:102:func1() [I] router: completed GET / for 192.168.1.163:0, 200 OK in 2.6ms @ web/home.go:32(web.Home)
+2025/06/09 17:56:57 ...s/process/manager.go:231:remove() [T] Done 684766b9: GET: /
+2025/06/09 17:56:58 ...ource/manager_run.go:46:Run() [T] Event source has no listeners
+2025/06/09 17:56:58 ...ource/manager_run.go:56:Run() [T] Pausing the eventsource
+2025/06/09 17:57:00 ...s/process/manager.go:188:Add() [T] Start 684766bc: GET: /user/login?redirect_to=%2f (request)
+2025/06/09 17:57:00 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/login?redirect_to=%2f for 192.168.1.163:0
+2025/06/09 17:57:00 .../context_response.go:70:HTML() [D] Template: user/auth/signin
+2025/06/09 17:57:00 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/login?redirect_to=%2f for 192.168.1.163:0, 200 OK in 2.6ms @ auth/auth.go:180(auth.SignIn)
+2025/06/09 17:57:00 ...s/process/manager.go:231:remove() [T] Done 684766bc: GET: /user/login?redirect_to=%2f
+2025/06/09 17:57:01 ...s/process/manager.go:188:Add() [T] Start 684766bd: GET: /user/oauth2/github (request)
+2025/06/09 17:57:01 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/oauth2/github for 192.168.1.163:0
+2025/06/09 17:57:01 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/oauth2/github for 192.168.1.163:0, 307 Temporary Redirect in 11.0ms @ auth/oauth.go:36(auth.SignInOAuth)
+2025/06/09 17:57:01 ...s/process/manager.go:231:remove() [T] Done 684766bd: GET: /user/oauth2/github
+2025/06/09 17:57:01 ...s/process/manager.go:188:Add() [T] Start 684766bd-2: GET: /user/oauth2/github/callback?code=01acaee01e6b7c46ee78&state=5f80af9a-2ce0-42d5-8277-636487639f39 (request)
+2025/06/09 17:57:01 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/oauth2/github/callback?code=01acaee01e6b7c46ee78&state=5f80af9a-2ce0-42d5-8277-636487639f39 for 192.168.1.163:0
+2025/06/09 17:57:02 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/oauth2/github/callback?code=01acaee01e6b7c46ee78&state=5f80af9a-2ce0-42d5-8277-636487639f39 for 192.168.1.163:0, 303 See Other in 539.6ms @ auth/oauth.go:75(auth.SignInOAuthCallback)
+2025/06/09 17:57:02 ...s/process/manager.go:231:remove() [T] Done 684766bd-2: GET: /user/oauth2/github/callback?code=01acaee01e6b7c46ee78&state=5f80af9a-2ce0-42d5-8277-636487639f39
+2025/06/09 17:57:02 ...s/process/manager.go:188:Add() [T] Start 684766be: GET: / (request)
+2025/06/09 17:57:02 ...eb/routing/logger.go:47:func1() [T] router: started   GET / for 192.168.1.163:0
+2025/06/09 17:57:02 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 17:57:02 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 17:57:02 .../context_response.go:70:HTML() [D] Template: user/dashboard/dashboard
+2025/06/09 17:57:02 ...eb/routing/logger.go:102:func1() [I] router: completed GET / for 192.168.1.163:0, 200 OK in 7.7ms @ web/home.go:32(web.Home)
+2025/06/09 17:57:02 ...s/process/manager.go:231:remove() [T] Done 684766be: GET: /
+2025/06/09 17:57:02 ...s/process/manager.go:188:Add() [T] Start 684766be-2: GET: /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= (request)
+2025/06/09 17:57:02 ...eb/routing/logger.go:47:func1() [T] router: started   GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= for 192.168.1.163:0
+2025/06/09 17:57:02 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 17:57:02 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 17:57:02 ...eb/routing/logger.go:102:func1() [I] router: completed GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= for 192.168.1.163:0, 200 OK in 2.1ms @ repo/repo.go:573(repo.SearchRepo)
+2025/06/09 17:57:02 ...s/process/manager.go:231:remove() [T] Done 684766be-2: GET: /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode=
+2025/06/09 17:57:02 ...s/process/manager.go:188:Add() [T] Start 684766be-3: GET: /assets/js/eventsource.sharedworker.js?v=1.23.8 (request)
+2025/06/09 17:57:02 ...eb/routing/logger.go:47:func1() [T] router: started   GET /assets/js/eventsource.sharedworker.js?v=1.23.8 for 192.168.1.163:0
+2025/06/09 17:57:02 ...eb/routing/logger.go:102:func1() [T] router: completed GET /assets/js/eventsource.sharedworker.js?v=1.23.8 for 192.168.1.163:0, 304 Not Modified in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 17:57:02 ...s/process/manager.go:231:remove() [T] Done 684766be-3: GET: /assets/js/eventsource.sharedworker.js?v=1.23.8
+2025/06/09 17:57:02 ...s/process/manager.go:188:Add() [T] Start 684766be-4: GET: /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false (request)
+2025/06/09 17:57:02 ...eb/routing/logger.go:47:func1() [T] router: started   GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false for 192.168.1.163:0
+2025/06/09 17:57:02 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 17:57:02 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 17:57:02 ...eb/routing/logger.go:102:func1() [I] router: completed GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false for 192.168.1.163:0, 200 OK in 5.1ms @ repo/repo.go:573(repo.SearchRepo)
+2025/06/09 17:57:02 ...s/process/manager.go:231:remove() [T] Done 684766be-4: GET: /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false
+2025/06/09 17:57:02 ...s/process/manager.go:188:Add() [T] Start 684766be-5: GET: /user/events (request)
+2025/06/09 17:57:02 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 17:57:02 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 17:57:02 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 17:57:02 ...ource/manager_run.go:61:Run() [T] Connection detected - restarting the eventsource
+2025/06/09 17:57:05 ...eb/routing/logger.go:68:func1() [I] router: polling   GET /user/events for 192.168.1.163:0, elapsed 3024.9ms @ events/events.go:18(events.Events)
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:57:40 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:40 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.0ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:57:40 ...s/process/manager.go:231:remove() [T] Done 684766e4: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:57:40 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:40 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:57:40 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:57:40 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:57:40 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc00fc6b940 0xc00fc6b980 0xc00fc6ba00 0xc00fc6ba40 0xc00fc6ba80 0xc00fc6bac0 0xc00fc6bb00 0xc00fc6bb40] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:57:40 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs . (from 684766e4-2) (normal)
+2025/06/09 17:57:40 ...s/process/manager.go:231:remove() [T] Done 684766e4-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:57:40 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 30.9ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:57:40 ...s/process/manager.go:231:remove() [T] Done 684766e4-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4-4: HEAD: /api/v3/meta?ghd=e512860d-291e-4432-b336-21a52d63bf15 (request)
+2025/06/09 17:57:40 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=e512860d-291e-4432-b336-21a52d63bf15 for 192.168.1.163:0
+2025/06/09 17:57:40 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:57:40 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=e512860d-291e-4432-b336-21a52d63bf15 for 192.168.1.163:0, 404 Not Found in 0.0ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:57:40 ...s/process/manager.go:231:remove() [T] Done 684766e4-4: HEAD: /api/v3/meta?ghd=e512860d-291e-4432-b336-21a52d63bf15
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack (request)
+2025/06/09 17:57:40 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:40 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:57:40 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:57:40 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:57:40 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc00fb1dcc0 0xc00fb1dd00 0xc00fb1dd80 0xc00fb1ddc0 0xc00fb1de00 0xc00fb1de40 0xc00fb1de80 0xc00fb1dec0] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:57:40 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git
+2025/06/09 17:57:40 ...s/process/manager.go:188:Add() [T] Start 684766e4-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git] (from 684766e4-5) (normal)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e4-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git]
+2025/06/09 17:57:41 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0, 200 OK in 30.5ms @ repo/githttp.go:478(repo.ServiceUploadPack)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e4-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:57:41 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:41 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.5ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:57:41 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:41 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:57:41 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:57:41 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:57:41 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc010126940 0xc010126980 0xc010126a00 0xc010126a40 0xc010126a80 0xc00fa488c0 0xc00fa48900 0xc00fa48940] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:57:41 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs . (from 684766e5-2) (normal)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:57:41 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 28.6ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5-4: HEAD: /api/v3/meta?ghd=84752bf7-82c4-446d-b874-1eb4f142ee7b (request)
+2025/06/09 17:57:41 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=84752bf7-82c4-446d-b874-1eb4f142ee7b for 192.168.1.163:0
+2025/06/09 17:57:41 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:57:41 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=84752bf7-82c4-446d-b874-1eb4f142ee7b for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5-4: HEAD: /api/v3/meta?ghd=84752bf7-82c4-446d-b874-1eb4f142ee7b
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack (request)
+2025/06/09 17:57:41 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0
+2025/06/09 17:57:41 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:57:41 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:57:41 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:57:41 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc01018fa00 0xc01018fa40 0xc01018fac0 0xc010126ac0 0xc010126b00 0xc010126b40 0xc00fb32d40 0xc00fb32d80] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:57:41 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git
+2025/06/09 17:57:41 ...s/process/manager.go:188:Add() [T] Start 684766e5-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git] (from 684766e5-5) (normal)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git]
+2025/06/09 17:57:41 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0, 200 OK in 30.3ms @ repo/githttp.go:478(repo.ServiceUploadPack)
+2025/06/09 17:57:41 ...s/process/manager.go:231:remove() [T] Done 684766e5-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack
+2025/06/09 17:57:49 ...s/process/manager.go:188:Add() [T] Start 684766ed: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:57:49 ...s/process/manager.go:231:remove() [T] Done 684766ed: Cron: Start actions schedule tasks
+2025/06/09 17:58:16 ...s/process/manager.go:188:Add() [T] Start 68476708: HEAD: / (request)
+2025/06/09 17:58:16 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD / for 195.123.244.84:0
+2025/06/09 17:58:16 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD / for 195.123.244.84:0, 200 OK in 0.0ms @ misc/misc.go:32(misc.DummyOK)
+2025/06/09 17:58:16 ...s/process/manager.go:231:remove() [T] Done 68476708: HEAD: /
+2025/06/09 17:58:17 ...s/process/manager.go:188:Add() [T] Start 68476709: GET: / (request)
+2025/06/09 17:58:17 ...eb/routing/logger.go:47:func1() [T] router: started   GET / for 195.123.244.84:0
+2025/06/09 17:58:17 .../context_response.go:70:HTML() [D] Template: home
+2025/06/09 17:58:17 ...eb/routing/logger.go:102:func1() [I] router: completed GET / for 195.123.244.84:0, 200 OK in 1.1ms @ web/home.go:32(web.Home)
+2025/06/09 17:58:17 ...s/process/manager.go:231:remove() [T] Done 68476709: GET: /
+2025/06/09 17:58:24 ...s/process/manager.go:188:Add() [T] Start 68476710: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack (request)
+2025/06/09 17:58:24 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 17:58:24 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack for 192.168.1.163:0, 401 Unauthorized in 1.6ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:58:24 ...s/process/manager.go:231:remove() [T] Done 68476710: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack
+2025/06/09 17:58:24 ...s/process/manager.go:188:Add() [T] Start 68476710-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack (request)
+2025/06/09 17:58:24 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 17:58:24 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:24 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:24 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:24 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc00fb66800 0xc00fb66840 0xc00fb668c0 0xc00fb66900 0xc00fb66940 0xc00fb66980 0xc00fb669c0 0xc00fb66a00] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:24 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:58:24 ...s/process/manager.go:188:Add() [T] Start 68476710-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs . (from 68476710-2) (normal)
+2025/06/09 17:58:24 ...s/process/manager.go:231:remove() [T] Done 68476710-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:58:24 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack for 192.168.1.163:0, 200 OK in 29.8ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:58:24 ...s/process/manager.go:231:remove() [T] Done 68476710-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-receive-pack
+2025/06/09 17:58:24 ...s/process/manager.go:188:Add() [T] Start 68476710-4: HEAD: /api/v3/meta?ghd=1e0448af-a33e-4b3b-8798-07748136a9e7 (request)
+2025/06/09 17:58:24 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=1e0448af-a33e-4b3b-8798-07748136a9e7 for 192.168.1.163:0
+2025/06/09 17:58:24 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:58:24 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=1e0448af-a33e-4b3b-8798-07748136a9e7 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:58:24 ...s/process/manager.go:231:remove() [T] Done 68476710-4: HEAD: /api/v3/meta?ghd=1e0448af-a33e-4b3b-8798-07748136a9e7
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:58:25 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:58:25 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.0ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack (request)
+2025/06/09 17:58:25 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 17:58:25 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:25 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:25 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:25 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc010234cc0 0xc010234d00 0xc010234d80 0xc010234dc0 0xc010234e00 0xc010234e40 0xc010234e80 0xc010234ec0] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:25 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs . (from 68476711-2) (normal)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711-3: git(dir:F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 17:58:25 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 29.7ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711-2: GET: /noahjgreer/ChoccowateRaspbewwyCakies/info/refs?service=git-upload-pack
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711-4: HEAD: /api/v3/meta?ghd=ff5fed55-34dc-4355-9738-434481c9114f (request)
+2025/06/09 17:58:25 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=ff5fed55-34dc-4355-9738-434481c9114f for 192.168.1.163:0
+2025/06/09 17:58:25 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:58:25 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=ff5fed55-34dc-4355-9738-434481c9114f for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711-4: HEAD: /api/v3/meta?ghd=ff5fed55-34dc-4355-9738-434481c9114f
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack (request)
+2025/06/09 17:58:25 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0
+2025/06/09 17:58:25 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:25 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:25 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:25 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc01030b940 0xc01030b980 0xc01030ba00 0xc01030ba40 0xc01030ba80 0xc01030bac0 0xc01030bb00 0xc01030bb40] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:25 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git
+2025/06/09 17:58:25 ...s/process/manager.go:188:Add() [T] Start 68476711-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git] (from 68476711-5) (normal)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git]
+2025/06/09 17:58:25 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack for 192.168.1.163:0, 200 OK in 29.3ms @ repo/githttp.go:478(repo.ServiceUploadPack)
+2025/06/09 17:58:25 ...s/process/manager.go:231:remove() [T] Done 68476711-5: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-upload-pack
+2025/06/09 17:58:44 ...s/process/manager.go:188:Add() [T] Start 68476724: HEAD: /api/v3/meta?ghd=dd26b32a-3eaf-4339-98c9-703431c20da9 (request)
+2025/06/09 17:58:44 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=dd26b32a-3eaf-4339-98c9-703431c20da9 for 192.168.1.163:0
+2025/06/09 17:58:44 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:58:44 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=dd26b32a-3eaf-4339-98c9-703431c20da9 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:58:44 ...s/process/manager.go:231:remove() [T] Done 68476724: HEAD: /api/v3/meta?ghd=dd26b32a-3eaf-4339-98c9-703431c20da9
+2025/06/09 17:58:46 ...s/process/manager.go:188:Add() [T] Start 68476726: POST: /noahjgreer/ChoccowateRaspbewwyCakies.git/info/lfs/objects/batch (request)
+2025/06/09 17:58:46 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies.git/info/lfs/objects/batch for 192.168.1.163:0
+2025/06/09 17:58:46 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:46 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:46 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:46 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc01039b680 0xc01039b6c0 0xc01039b740 0xc01008b480 0xc01008b4c0 0xc01008b500 0xc01008b540 0xc01008b580] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:46 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies.git/info/lfs/objects/batch for 192.168.1.163:0, 200 OK in 9.8ms @ lfs/server.go:158(lfs.BatchHandler)
+2025/06/09 17:58:46 ...s/process/manager.go:231:remove() [T] Done 68476726: POST: /noahjgreer/ChoccowateRaspbewwyCakies.git/info/lfs/objects/batch
+2025/06/09 17:58:46 ...s/process/manager.go:188:Add() [T] Start 68476726-2: HEAD: /api/v3/meta?ghd=a42a7a5e-8c01-4f24-9615-5143f96ae9c8 (request)
+2025/06/09 17:58:46 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=a42a7a5e-8c01-4f24-9615-5143f96ae9c8 for 192.168.1.163:0
+2025/06/09 17:58:46 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 17:58:46 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=a42a7a5e-8c01-4f24-9615-5143f96ae9c8 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 17:58:46 ...s/process/manager.go:231:remove() [T] Done 68476726-2: HEAD: /api/v3/meta?ghd=a42a7a5e-8c01-4f24-9615-5143f96ae9c8
+2025/06/09 17:58:47 ...s/process/manager.go:188:Add() [T] Start 68476727: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack (request)
+2025/06/09 17:58:47 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack for 192.168.1.163:0
+2025/06/09 17:58:47 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:47 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:47 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:47 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc0103b5ec0 0xc0103b5f00 0xc0103ca000 0xc0103ca040 0xc0103ca080 0xc0103ca0c0 0xc0103ca100 0xc0100b1580] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:47 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git
+2025/06/09 17:58:47 ...s/process/manager.go:188:Add() [T] Start 68476727-2: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git] (from 68476727) (normal)
+2025/06/09 17:58:48 ...s/process/manager.go:231:remove() [T] Done 68476727-2: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git]
+2025/06/09 17:58:48 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack for 192.168.1.163:0, 0  in 31.2ms @ repo/githttp.go:486(repo.ServiceReceivePack)
+2025/06/09 17:58:48 ...s/process/manager.go:231:remove() [T] Done 68476727: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack
+2025/06/09 17:58:48 ...s/process/manager.go:188:Add() [T] Start 68476728: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack (request)
+2025/06/09 17:58:48 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack for 192.168.1.163:0
+2025/06/09 17:58:48 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 17:58:48 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 17:58:48 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=1, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 17:58:48 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 1:noahjgreer/ChoccowateRaspbewwyCakies>, permissions: {AccessMode:4 units:[0xc010322d00 0xc010322d40 0xc010322dc0 0xc010322e00 0xc010322e40 0xc010322e80 0xc010322ec0 0xc010322f00] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 17:58:48 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git
+2025/06/09 17:58:48 ...s/process/manager.go:188:Add() [T] Start 68476728-2: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git] (from 68476728) (normal)
+2025/06/09 17:58:49 ...s/process/manager.go:188:Add() [T] Start 68476729: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:58:49 ...s/process/manager.go:231:remove() [T] Done 68476729: Cron: Start actions schedule tasks
+2025/06/09 17:58:51 ...eb/routing/logger.go:68:func1() [W] router: slow      POST /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack for 192.168.1.163:0, elapsed 3412.8ms @ repo/githttp.go:486(repo.ServiceReceivePack)
+2025/06/09 17:58:55 ...dules/git/command.go:347:Run() [D] slow git.Command.Run: "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git (7.7626699s)
+2025/06/09 17:58:55 ...s/process/manager.go:231:remove() [T] Done 68476728-2: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\choccowateraspbewwycakies.git]
+2025/06/09 17:58:55 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack for 192.168.1.163:0, 200 OK in 7771.4ms @ repo/githttp.go:486(repo.ServiceReceivePack)
+2025/06/09 17:58:55 ...s/process/manager.go:231:remove() [T] Done 68476728: POST: /noahjgreer/ChoccowateRaspbewwyCakies/git-receive-pack
+2025/06/09 17:59:49 ...s/process/manager.go:188:Add() [T] Start 68476765: Cron: Start actions schedule tasks (normal)
+2025/06/09 17:59:49 ...s/process/manager.go:231:remove() [T] Done 68476765: Cron: Start actions schedule tasks
+2025/06/09 18:00:49 ...s/process/manager.go:188:Add() [T] Start 684767a1: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:00:49 ...s/process/manager.go:231:remove() [T] Done 684767a1: Cron: Start actions schedule tasks
+2025/06/09 18:01:49 ...s/process/manager.go:188:Add() [T] Start 684767dd-2: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:01:49 ...s/process/manager.go:188:Add() [T] Start 684767dd: Cron: Stop actions zombie tasks (normal)
+2025/06/09 18:01:49 ...s/process/manager.go:231:remove() [T] Done 684767dd: Cron: Stop actions zombie tasks
+2025/06/09 18:01:49 ...s/process/manager.go:231:remove() [T] Done 684767dd-2: Cron: Start actions schedule tasks
+2025/06/09 18:01:50 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 287838.1ms @ events/events.go:18(events.Events)
+2025/06/09 18:01:50 ...s/process/manager.go:231:remove() [T] Done 684766be-5: GET: /user/events
+2025/06/09 18:01:50 ...s/process/manager.go:188:Add() [T] Start 684767de: GET: /repo/create (request)
+2025/06/09 18:01:50 ...eb/routing/logger.go:47:func1() [T] router: started   GET /repo/create for 192.168.1.163:0
+2025/06/09 18:01:50 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:01:50 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:01:50 .../context_response.go:70:HTML() [D] Template: repo/create
+2025/06/09 18:01:50 ...eb/routing/logger.go:102:func1() [I] router: completed GET /repo/create for 192.168.1.163:0, 200 OK in 7.2ms @ repo/repo.go:152(repo.Create)
+2025/06/09 18:01:50 ...s/process/manager.go:231:remove() [T] Done 684767de: GET: /repo/create
+2025/06/09 18:01:50 ...s/process/manager.go:188:Add() [T] Start 684767de-2: GET: /avatars/9f952c0cef72e08d053244cad89e4101?size=56 (request)
+2025/06/09 18:01:50 ...eb/routing/logger.go:47:func1() [T] router: started   GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56 for 192.168.1.163:0
+2025/06/09 18:01:50 routers/web/base.go:80:func2() [W] Unable to find avatars 9f952c0cef72e08d053244cad89e4101
+2025/06/09 18:01:50 ...eb/routing/logger.go:102:func1() [I] router: completed GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56 for 192.168.1.163:0, 404 Not Found in 0.5ms @ web/base.go:22(avatars)
+2025/06/09 18:01:50 ...s/process/manager.go:231:remove() [T] Done 684767de-2: GET: /avatars/9f952c0cef72e08d053244cad89e4101?size=56
+2025/06/09 18:01:50 ...s/process/manager.go:188:Add() [T] Start 684767de-3: GET: /user/events (request)
+2025/06/09 18:01:50 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:01:50 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:01:50 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:01:54 ...eb/routing/logger.go:68:func1() [I] router: polling   GET /user/events for 192.168.1.163:0, elapsed 3922.0ms @ events/events.go:18(events.Events)
+2025/06/09 18:01:56 ...s/process/manager.go:188:Add() [T] Start 684767e4: GET: /repo/search?q=&template=true&priority_owner_id=2&_=1749510110220 (request)
+2025/06/09 18:01:56 ...eb/routing/logger.go:47:func1() [T] router: started   GET /repo/search?q=&template=true&priority_owner_id=2&_=1749510110220 for 192.168.1.163:0
+2025/06/09 18:01:56 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:01:56 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:01:56 ...eb/routing/logger.go:102:func1() [I] router: completed GET /repo/search?q=&template=true&priority_owner_id=2&_=1749510110220 for 192.168.1.163:0, 200 OK in 2.6ms @ repo/repo.go:573(repo.SearchRepo)
+2025/06/09 18:01:56 ...s/process/manager.go:231:remove() [T] Done 684767e4: GET: /repo/search?q=&template=true&priority_owner_id=2&_=1749510110220
+2025/06/09 18:02:06 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 16205.7ms @ events/events.go:18(events.Events)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767de-3: GET: /user/events
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee: POST: /repo/create (request)
+2025/06/09 18:02:06 ...eb/routing/logger.go:47:func1() [T] router: started   POST /repo/create for 192.168.1.163:0
+2025/06/09 18:02:06 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:02:06 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:02:06 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= init --bare
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-2: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= init --bare (from 684767ee) (normal)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee-2: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= init --bare
+2025/06/09 18:02:06 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= symbolic-ref HEAD refs/heads/main
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-3: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= symbolic-ref HEAD refs/heads/main (from 684767ee) (normal)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee-3: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= symbolic-ref HEAD refs/heads/main
+2025/06/09 18:02:06 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= update-server-info
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-4: CreateRepository(git update-server-info): F:\LocalGit\repos\noahjgreer\testificate.git (from 684767ee) (normal)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee-4: CreateRepository(git update-server-info): F:\LocalGit\repos\noahjgreer\testificate.git
+2025/06/09 18:02:06 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:02:06 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc0006f0900 0xc0006f0a80 0xc0006f0e00 0xc0006f0e40 0xc0006f0fc0 0xc0006f1180 0xc0006f1300 0xc0006f1500] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:02:06 ...s/notifier_helper.go:111:Notify() [T] execute CreateRepository for event repository whose doer is noahjgreer
+2025/06/09 18:02:06 ...ers/web/repo/repo.go:302:CreatePost() [T] Repository created [2]: noahjgreer/testificate
+2025/06/09 18:02:06 ...eb/routing/logger.go:102:func1() [I] router: completed POST /repo/create for 192.168.1.163:0, 303 See Other in 86.4ms @ repo/repo.go:222(repo.CreatePost)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee: POST: /repo/create
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-5: GET: /noahjgreer/testificate (request)
+2025/06/09 18:02:06 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/testificate for 192.168.1.163:0
+2025/06/09 18:02:06 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:02:06 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:02:06 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:02:06 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc00099e980 0xc00099ea40 0xc00099ebc0 0xc00099ec00 0xc00099ecc0 0xc00099ed80 0xc00099ee80 0xc00099ef40] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:02:06 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-6: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all (from 684767ee-5) (normal)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee-6: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:02:06 .../context_response.go:70:HTML() [D] Template: repo/empty
+2025/06/09 18:02:06 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/testificate for 192.168.1.163:0, 200 OK in 29.8ms @ repo/view_home.go:332(repo.Home)
+2025/06/09 18:02:06 ...s/process/manager.go:231:remove() [T] Done 684767ee-5: GET: /noahjgreer/testificate
+2025/06/09 18:02:06 ...s/process/manager.go:188:Add() [T] Start 684767ee-7: GET: /user/events (request)
+2025/06/09 18:02:06 ...eb/routing/logger.go:47:func1() [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:02:06 ...ices/auth/session.go:40:Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:02:06 ...ices/auth/session.go:58:Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:02:10 ...eb/routing/logger.go:68:func1() [I] router: polling   GET /user/events for 192.168.1.163:0, elapsed 3446.6ms @ events/events.go:18(events.Events)
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb: GET: /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:02:19 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:02:19 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.5ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb: GET: /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb-2: GET: /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:02:19 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:02:19 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:02:19 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:02:19 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:02:19 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc009ee1440 0xc009ee1580 0xc009ee16c0 0xc009ee1940 0xc009ee1a00 0xc009ee1ac0 0xc009ee1b00 0xc009ee1d40] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:02:19 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb-3: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs . (from 684767fb-2) (normal)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb-3: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:02:19 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 30.3ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb-2: GET: /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb-4: HEAD: /api/v3/meta?ghd=c9ae867d-7f4b-4333-a99a-dcd38f7e78e7 (request)
+2025/06/09 18:02:19 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=c9ae867d-7f4b-4333-a99a-dcd38f7e78e7 for 192.168.1.163:0
+2025/06/09 18:02:19 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 18:02:19 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=c9ae867d-7f4b-4333-a99a-dcd38f7e78e7 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb-4: HEAD: /api/v3/meta?ghd=c9ae867d-7f4b-4333-a99a-dcd38f7e78e7
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb-5: POST: /noahjgreer/testificate.git/git-upload-pack (request)
+2025/06/09 18:02:19 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0
+2025/06/09 18:02:19 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:02:19 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:02:19 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:02:19 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc00a1d3000 0xc00a1d3100 0xc00a1d32c0 0xc00a1d3380 0xc00a1d33c0 0xc00a1d3400 0xc00a1d34c0 0xc00a1d3580] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:02:19 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= upload-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\testificate.git
+2025/06/09 18:02:19 ...s/process/manager.go:188:Add() [T] Start 684767fb-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\testificate.git] (from 684767fb-5) (normal)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb-6: C:\Program Files\Git\cmd\git.exe upload-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\testificate.git]
+2025/06/09 18:02:19 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0, 200 OK in 30.7ms @ repo/githttp.go:478(repo.ServiceUploadPack)
+2025/06/09 18:02:19 ...s/process/manager.go:231:remove() [T] Done 684767fb-5: POST: /noahjgreer/testificate.git/git-upload-pack
+2025/06/09 18:02:49 ...s/process/manager.go:188:Add() [T] Start 68476819: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:02:49 ...s/process/manager.go:231:remove() [T] Done 68476819: Cron: Start actions schedule tasks
+2025/06/09 18:03:18 ...s/process/manager.go:188:Add() [T] Start 68476836: GET: /noahjgreer/testificate.git/info/refs?service=git-receive-pack (request)
+2025/06/09 18:03:18 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 18:03:18 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0, 401 Unauthorized in 1.0ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 18:03:18 ...s/process/manager.go:231:remove() [T] Done 68476836: GET: /noahjgreer/testificate.git/info/refs?service=git-receive-pack
+2025/06/09 18:03:19 ...s/process/manager.go:188:Add() [T] Start 68476837: GET: /noahjgreer/testificate.git/info/refs?service=git-receive-pack (request)
+2025/06/09 18:03:19 ...eb/routing/logger.go:47:func1() [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 18:03:19 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:03:19 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:03:19 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:03:19 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc0103226c0 0xc010322700 0xc010322780 0xc0101ae680 0xc0101ae6c0 0xc0101ae700 0xc0101ae740 0xc0101ae780] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:03:19 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:03:19 ...s/process/manager.go:188:Add() [T] Start 68476837-2: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs . (from 68476837) (normal)
+2025/06/09 18:03:19 ...s/process/manager.go:231:remove() [T] Done 68476837-2: git(dir:F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:03:19 ...eb/routing/logger.go:102:func1() [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0, 200 OK in 30.8ms @ repo/githttp.go:518(repo.GetInfoRefs)
+2025/06/09 18:03:19 ...s/process/manager.go:231:remove() [T] Done 68476837: GET: /noahjgreer/testificate.git/info/refs?service=git-receive-pack
+2025/06/09 18:03:19 ...s/process/manager.go:188:Add() [T] Start 68476837-3: HEAD: /api/v3/meta?ghd=3cf7e682-565a-4ebe-8f4c-8f964542a673 (request)
+2025/06/09 18:03:19 ...eb/routing/logger.go:47:func1() [T] router: started   HEAD /api/v3/meta?ghd=3cf7e682-565a-4ebe-8f4c-8f964542a673 for 192.168.1.163:0
+2025/06/09 18:03:19 routers/web/web.go:1643:func56() [T] plainTextInternal (status=404): Not found.
+2025/06/09 18:03:19 ...eb/routing/logger.go:102:func1() [I] router: completed HEAD /api/v3/meta?ghd=3cf7e682-565a-4ebe-8f4c-8f964542a673 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 18:03:19 ...s/process/manager.go:231:remove() [T] Done 68476837-3: HEAD: /api/v3/meta?ghd=3cf7e682-565a-4ebe-8f4c-8f964542a673
+2025/06/09 18:03:19 ...s/process/manager.go:188:Add() [T] Start 68476837-4: POST: /noahjgreer/testificate.git/git-receive-pack (request)
+2025/06/09 18:03:19 ...eb/routing/logger.go:47:func1() [T] router: started   POST /noahjgreer/testificate.git/git-receive-pack for 192.168.1.163:0
+2025/06/09 18:03:19 ...rvices/auth/basic.go:73:Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:03:19 ...rvices/auth/basic.go:99:Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:03:19 models/repo/repo.go:375:LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:03:19 ...s/repo_permission.go:199:func1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: {AccessMode:4 units:[0xc0103cb840 0xc0103cb880 0xc0103cb900 0xc0103cb940 0xc0103cb980 0xc0103cb9c0 0xc0103cba00 0xc0103cba40] unitsMode:map[] everyoneAccessMode:map[]}
+2025/06/09 18:03:19 ...dules/git/command.go:292:Run() [D] git.Command.RunDir(F:\LocalGit\repos\noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" -c protocol.version=2 -c credential.helper= -c filter.lfs.required= -c filter.lfs.smudge= -c filter.lfs.clean= receive-pack --stateless-rpc F:\LocalGit\repos\noahjgreer\testificate.git
+2025/06/09 18:03:19 ...s/process/manager.go:188:Add() [T] Start 68476837-5: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\testificate.git] (from 68476837-4) (normal)
+2025/06/09 18:03:19 ...s/process/manager.go:231:remove() [T] Done 68476837-5: C:\Program Files\Git\cmd\git.exe receive-pack --stateless-rpc [repo_path: F:\LocalGit\repos\noahjgreer\testificate.git]
+2025/06/09 18:03:19 ...eb/routing/logger.go:102:func1() [I] router: completed POST /noahjgreer/testificate.git/git-receive-pack for 192.168.1.163:0, 200 OK in 739.0ms @ repo/githttp.go:486(repo.ServiceReceivePack)
+2025/06/09 18:03:19 ...s/process/manager.go:231:remove() [T] Done 68476837-4: POST: /noahjgreer/testificate.git/git-receive-pack
+2025/06/09 18:03:49 ...s/process/manager.go:188:Add() [T] Start 68476855: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:03:49 ...s/process/manager.go:231:remove() [T] Done 68476855: Cron: Start actions schedule tasks
+2025/06/09 18:04:49 ...s/process/manager.go:188:Add() [T] Start 68476891: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:04:49 ...s/process/manager.go:231:remove() [T] Done 68476891: Cron: Start actions schedule tasks
+2025/06/09 18:05:49 ...s/process/manager.go:188:Add() [T] Start 684768cd: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:05:49 ...s/process/manager.go:231:remove() [T] Done 684768cd: Cron: Start actions schedule tasks
+2025/06/09 18:06:12 ...l/manager_windows.go:104:Execute() [T] SVC requested shutdown - shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "branch_sync" is shutting down
+2025/06/09 18:06:12 ...l/manager_windows.go:119:Execute() [T] Sending StopPending state to SVC
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "push_update" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "task" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "tag_sync" is shutting down
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-21: Queue: tag_sync
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "repo_stats_update" is shutting down
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-33: Queue: task
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-24: Queue: branch_sync
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-27: Queue: repo_stats_update
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "task" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "tag_sync" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "branch_sync" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "actions_ready_job" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "mirror" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "repo_stats_update" stops running
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-19: Queue: notification-service
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-35: Queue: actions_ready_job
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-28: Queue: mirror
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "actions_ready_job" stops running
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-23: Queue: push_update
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "mirror" stops running
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-20: Queue: repo-archive
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "pr_auto_merge" is shutting down
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-22: Queue: repo_license_updater
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-32: Queue: pr_auto_merge
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-29: Queue: webhook_sender
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "push_update" stops running
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-30: Queue: pr_patch_checker
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "pr_auto_merge" stops running
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-34: Service: EventSource
+2025/06/09 18:06:12 ...s/graceful/server.go:156:Serve() [D] Waiting for connections to finish... (PID: 5140)
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b0-26: Queue: issue_indexer
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b1-10: Service: SlowQueryDetector
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "issue_indexer" is shutting down
+2025/06/09 18:06:12 ...eful/server_hooks.go:46:doShutdown() [I] PID: 5140 Listener ([::]:3000) closed.
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b1: Service: Cron
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "repo-archive" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "repo-archive" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "issue_indexer" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "repo_license_updater" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "webhook_sender" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "repo_license_updater" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "notification-service" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:349:doRun() [D] Queue "pr_patch_checker" is shutting down
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "webhook_sender" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "pr_patch_checker" stops running
+2025/06/09 18:06:12 ...queue/workergroup.go:350:doRun() [D] Queue "notification-service" stops running
+2025/06/09 18:06:12 ...eb/routing/logger.go:102:func1() [I] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 245786.2ms @ events/events.go:18(events.Events)
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684767ee-7: GET: /user/events
+2025/06/09 18:06:12 ...s/graceful/server.go:162:Serve() [D] Serve() returning... (PID: 5140)
+2025/06/09 18:06:12 .../graceful/manager.go:168:doHammerTime() [W] Setting Hammer condition
+2025/06/09 18:06:12 cmd/web.go:366:listen() [I] HTTP Listener: 0.0.0.0:3000 Closed
+2025/06/09 18:06:12 ...l/manager_windows.go:145:Execute() [T] Stopped
+2025/06/09 18:06:12 ...s/process/manager.go:231:remove() [T] Done 684766b1-11: Web: Gitea Server
+2025/06/09 18:06:13 .../graceful/manager.go:184:doTerminate() [W] Terminating
+2025/06/09 18:06:13 ...er/issues/indexer.go:118:2() [D] Closing issue indexer
+2025/06/09 18:06:13 ...s/process/manager.go:231:remove() [T] Done 684766b0-25: Service: IssueIndexer
+2025/06/09 18:06:13 ...er/issues/indexer.go:120:2() [I] PID: 5140 Issue Indexer closed
+2025/06/09 18:06:13 cmd/web.go:225:serveInstalled() [I] PID: 5140 Gitea Web Finished
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476964-6: Logger: EventWriter: console-default
+2025/06/09 18:08:21 modules/storage/storage.go:176:initAttachments() [I] Initialising Attachment storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\attachments
+2025/06/09 18:08:21 modules/storage/storage.go:166:initAvatars() [I] Initialising Avatar storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\avatars
+2025/06/09 18:08:21 modules/storage/storage.go:192:initRepoAvatars() [I] Initialising Repository Avatar storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-avatars
+2025/06/09 18:08:21 modules/storage/storage.go:186:initLFS() [I] Initialising LFS storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at F:/LocalGit/lfs-data
+2025/06/09 18:08:21 modules/storage/storage.go:198:initRepoArchives() [I] Initialising Repository Archive storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\repo-archive
+2025/06/09 18:08:21 modules/storage/storage.go:208:initPackages() [I] Initialising Packages storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\packages
+2025/06/09 18:08:21 modules/storage/storage.go:219:initActions() [I] Initialising Actions storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_log
+2025/06/09 18:08:21 modules/storage/storage.go:223:initActions() [I] Initialising ActionsArtifacts storage with type: local
+2025/06/09 18:08:21 modules/storage/local.go:33:NewLocalStorage() [I] Creating new Local Storage at C:\Users\Administrator\Downloads\data\actions_artifacts
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "notification-service" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-6: Queue: notification-service (system)
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "repo-archive" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-7: Queue: repo-archive (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "repo-archive" starts running
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "notification-service" starts running
+2025/06/09 18:08:21 routers/init.go:139:InitWebInstalled() [I] SQLite3 support is enabled
+2025/06/09 18:08:21 routers/common/db.go:24:InitDBEngine() [I] Beginning ORM engine initialization.
+2025/06/09 18:08:21 routers/common/db.go:31:InitDBEngine() [I] ORM engine initialization attempt #1/10...
+2025/06/09 18:08:21 cmd/web.go:207:serveInstalled() [I] PING DATABASE sqlite3
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[312]: Add DeleteBranchAfterMerge to AutoMerge
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[313]: Move PinOrder from issue table to a new table issue_pin
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[314]: Update OwnerID as zero for repository level action tables
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[315]: Add Ephemeral to ActionRunner
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[316]: Add description for secrets and variables
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[317]: Add new index for action for heatmap
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[318]: Add anonymous_access_mode for repo_unit
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[319]: Add ExclusiveOrder to Label table
+2025/06/09 18:08:21 .../migrations/migrations.go:507:Migrate() [I] Migration[320]: Migrate two_factor_policy to login_source table
+2025/06/09 18:08:21 cmd/web.go:207:serveInstalled() [W] Table system_setting Column version db default is , struct default is 1
+2025/06/09 18:08:21 routers/init.go:145:InitWebInstalled() [I] ORM engine initialization successful!
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "tag_sync" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-8: Queue: tag_sync (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "tag_sync" starts running
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "repo_license_updater" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-9: Queue: repo_license_updater (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "repo_license_updater" starts running
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "push_update" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-10: Queue: push_update (system)
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "branch_sync" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-11: Queue: branch_sync (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "push_update" starts running
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "branch_sync" starts running
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-12: Service: IssueIndexer (system)
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "issue_indexer" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-13: Queue: issue_indexer (from 68476965-12) (system)
+2025/06/09 18:08:21 .../indexer/issues/indexer.go:77:InitIssueIndexer.1() [I] PID 11172: Initializing Issue Indexer: bleve
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "repo_stats_update" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-14: Queue: repo_stats_update (system)
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "mirror" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-15: Queue: mirror (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "repo_stats_update" starts running
+2025/06/09 18:08:21 .../indexer/stats/indexer.go:41:populateRepoIndexer() [I] Populating the repo stats indexer with existing repositories
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "mirror" starts running
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "webhook_sender" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-16: Queue: webhook_sender (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "webhook_sender" starts running
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "pr_patch_checker" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-17: Webhook: Populate sending queue (normal)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-18: Queue: pr_patch_checker (system)
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "pr_auto_merge" of type "level"
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "pr_patch_checker" starts running
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-19: Queue: pr_auto_merge (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "pr_auto_merge" starts running
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "task" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-20: Queue: task (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "task" starts running
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-21: Service: EventSource (system)
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-17: Webhook: Populate sending queue
+2025/06/09 18:08:21 .../indexer/stats/indexer.go:87:populateRepoIndexer() [I] Done (re)populating the repo stats indexer with existing repositories
+2025/06/09 18:08:21 routers/init.go:86:syncAppConfForGit() [I] AppPath changed from 'F:/LocalGit/gitea/gitea-1.23.8-gogit-windows-4.0-amd64.exe' to 'F:/LocalGit/gitea/gitea-1.24-nightly-windows-4.0-amd64.exe'
+2025/06/09 18:08:21 routers/init.go:97:syncAppConfForGit() [I] re-sync repository hooks ...
+2025/06/09 18:08:21 services/repository/hooks.go:22:SyncRepositoryHooks() [T] Doing: SyncRepositoryHooks
+2025/06/09 18:08:21 .../indexer/issues/indexer.go:154:InitIssueIndexer.2() [I] Issue Indexer Initialization took 2.0843ms
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "issue_indexer" starts running
+2025/06/09 18:08:21 services/repository/hooks.go:48:SyncRepositoryHooks() [T] Finished: SyncRepositoryHooks
+2025/06/09 18:08:21 routers/init.go:100:syncAppConfForGit() [I] re-write ssh public keys ...
+2025/06/09 18:08:21 .../queue/workerqueue.go:232:NewWorkerPoolQueueWithContext() [T] Created queue "actions_ready_job" of type "level"
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-22: Queue: actions_ready_job (system)
+2025/06/09 18:08:21 .../queue/workergroup.go:294:(*WorkerPoolQueue).doRun() [D] Queue "actions_ready_job" starts running
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-23: Service: Cron (system)
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: update_mirrors
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: repo_health_check
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: check_repo_stats
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: archive_cleanup
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_external_users
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: deleted_branches_cleanup
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: update_migration_poster_id
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_hook_task_table
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_packages
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: sync_repo_licenses
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_inactive_accounts
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_repo_archives
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: git_gc_repos
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshkeys
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_sshprincipals
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: resync_all_hooks
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: reinit_missing_repos
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_missing_repos
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_generated_repository_avatars
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_actions
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: update_checker
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: delete_old_system_notices
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: gc_lfs
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: rebuild_issue_indexer
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_zombie_tasks
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: stop_endless_tasks
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: cancel_abandoned_jobs
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: start_schedule_tasks
+2025/06/09 18:08:21 services/cron/tasks.go:159:RegisterTask() [D] Registering task: cleanup_actions
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-24: Cron: Check all repository statistics (normal)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-27: Cron: Stop actions endless tasks (normal)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-26: Cron: Stop actions zombie tasks (normal)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-28: Cron: Cleanup expired packages (normal)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-29: Cron: Delete old repository archives (normal)
+2025/06/09 18:08:21 models/repo.go:142:CheckRepoStats() [T] Doing: CheckRepoStats
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-25: Cron: Update migration poster IDs (normal)
+2025/06/09 18:08:21 .../archiver/archiver.go:305:DeleteOldRepositoryArchives() [T] Doing: ArchiveCleanup
+2025/06/09 18:08:21 .../templates/htmlrenderer.go:118:initHTMLRenderer() [D] Creating static HTML Renderer
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-26: Cron: Stop actions zombie tasks
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-30: Cron: Clean-up deleted branches (normal)
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-27: Cron: Stop actions endless tasks
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-31: Cron: Cancel actions abandoned jobs (normal)
+2025/06/09 18:08:21 models/git/branch.go:305:RemoveOldDeletedBranches() [T] Doing: DeletedBranchesCleanup
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-31: Cron: Cancel actions abandoned jobs
+2025/06/09 18:08:21 .../archiver/archiver.go:330:DeleteOldRepositoryArchives() [T] Finished: ArchiveCleanup
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-29: Cron: Delete old repository archives
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-28: Cron: Cleanup expired packages
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-30: Cron: Clean-up deleted branches
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-24: Cron: Check all repository statistics
+2025/06/09 18:08:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-25: Cron: Update migration poster IDs
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-32: Service: SlowQueryDetector (system)
+2025/06/09 18:08:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476965-33: Web: Gitea Server (system)
+2025/06/09 18:08:21 cmd/web.go:323:listen() [I] Listen: http://0.0.0.0:3000
+2025/06/09 18:08:21 cmd/web.go:327:listen() [I] AppURL(ROOT_URL): https://git.muffinmode.net/
+2025/06/09 18:08:21 cmd/web.go:330:listen() [I] LFS server enabled
+2025/06/09 18:08:21 modules/graceful/server.go:50:NewServer() [I] Starting new Web server: tcp:0.0.0.0:3000 on PID: 11172
+2025/06/09 18:08:21 modules/graceful/server.go:63:NewServer.1() [D] Starting server on tcp:0.0.0.0:3000 (PID: 11172)
+2025/06/09 18:08:21 .../graceful/manager_windows.go:74:(*Manager).Execute() [T] Sending Running state to SVC
+2025/06/09 18:08:21 .../graceful/manager_windows.go:82:(*Manager).Execute() [T] Started
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c: HTTP: GET /noahjgreer/testificate (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /noahjgreer/testificate for 192.168.1.163:0
+2025/06/09 18:08:28 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:28 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:28 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:28 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:28 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all (from 6847696c) (normal)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:28 .../context/context_response.go:69:(*Context).HTML() [D] Template: repo/empty
+2025/06/09 18:08:28 HTTPRequest [I] router: completed GET /noahjgreer/testificate for 192.168.1.163:0, 200 OK in 37.3ms @ repo/view_home.go:390(repo.Home)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c: HTTP: GET /noahjgreer/testificate
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-3: HTTP: GET /assets/js/webcomponents.js?v=1.24.0~rc0-62-ga3b25436f2 (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /assets/js/webcomponents.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0
+2025/06/09 18:08:28 HTTPRequest [T] router: completed GET /assets/js/webcomponents.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-3: HTTP: GET /assets/js/webcomponents.js?v=1.24.0~rc0-62-ga3b25436f2
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-4: HTTP: GET /assets/css/index.css?v=1.24.0~rc0-62-ga3b25436f2 (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /assets/css/index.css?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0
+2025/06/09 18:08:28 HTTPRequest [T] router: completed GET /assets/css/index.css?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-4: HTTP: GET /assets/css/index.css?v=1.24.0~rc0-62-ga3b25436f2
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-5: HTTP: GET /assets/css/theme-gitea-auto.css?v=1.24.0~rc0-62-ga3b25436f2 (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /assets/css/theme-gitea-auto.css?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-6: HTTP: GET /assets/js/index.js?v=1.24.0~rc0-62-ga3b25436f2 (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /assets/js/index.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0
+2025/06/09 18:08:28 HTTPRequest [T] router: completed GET /assets/css/theme-gitea-auto.css?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-5: HTTP: GET /assets/css/theme-gitea-auto.css?v=1.24.0~rc0-62-ga3b25436f2
+2025/06/09 18:08:28 HTTPRequest [T] router: completed GET /assets/js/index.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-6: HTTP: GET /assets/js/index.js?v=1.24.0~rc0-62-ga3b25436f2
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-7: HTTP: GET /assets/js/eventsource.sharedworker.js?v=1.24.0~rc0-62-ga3b25436f2 (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /assets/js/eventsource.sharedworker.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0
+2025/06/09 18:08:28 HTTPRequest [T] router: completed GET /assets/js/eventsource.sharedworker.js?v=1.24.0~rc0-62-ga3b25436f2 for 192.168.1.163:0, 200 OK in 0.5ms @ public/public.go:34(web.Routes.FileHandlerFunc)
+2025/06/09 18:08:28 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-7: HTTP: GET /assets/js/eventsource.sharedworker.js?v=1.24.0~rc0-62-ga3b25436f2
+2025/06/09 18:08:28 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696c-8: HTTP: GET /user/events (request)
+2025/06/09 18:08:28 HTTPRequest [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:08:28 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:28 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:29 HTTPRequest [T] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 704.6ms @ events/events.go:18(events.Events)
+2025/06/09 18:08:29 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696c-8: HTTP: GET /user/events
+2025/06/09 18:08:29 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696d: HTTP: GET /noahjgreer/testificate (request)
+2025/06/09 18:08:29 HTTPRequest [T] router: started   GET /noahjgreer/testificate for 192.168.1.163:0
+2025/06/09 18:08:29 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:29 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:29 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:29 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:29 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:29 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696d-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all (from 6847696d) (normal)
+2025/06/09 18:08:29 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696d-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:29 .../context/context_response.go:69:(*Context).HTML() [D] Template: repo/empty
+2025/06/09 18:08:29 HTTPRequest [I] router: completed GET /noahjgreer/testificate for 192.168.1.163:0, 200 OK in 31.4ms @ repo/view_home.go:390(repo.Home)
+2025/06/09 18:08:29 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696d: HTTP: GET /noahjgreer/testificate
+2025/06/09 18:08:29 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696d-3: HTTP: GET /user/events (request)
+2025/06/09 18:08:29 HTTPRequest [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:08:29 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:29 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:31 HTTPRequest [T] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 1783.5ms @ events/events.go:18(events.Events)
+2025/06/09 18:08:31 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696d-3: HTTP: GET /user/events
+2025/06/09 18:08:31 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696f: HTTP: GET / (request)
+2025/06/09 18:08:31 HTTPRequest [T] router: started   GET / for 192.168.1.163:0
+2025/06/09 18:08:31 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:31 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:31 .../context/context_response.go:69:(*Context).HTML() [D] Template: user/dashboard/dashboard
+2025/06/09 18:08:31 HTTPRequest [I] router: completed GET / for 192.168.1.163:0, 200 OK in 7.8ms @ web/home.go:32(web.Home)
+2025/06/09 18:08:31 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696f: HTTP: GET /
+2025/06/09 18:08:31 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696f-2: HTTP: GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= (request)
+2025/06/09 18:08:31 HTTPRequest [T] router: started   GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= for 192.168.1.163:0
+2025/06/09 18:08:31 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:31 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:31 HTTPRequest [I] router: completed GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode= for 192.168.1.163:0, 200 OK in 2.1ms @ repo/repo.go:459(repo.SearchRepo)
+2025/06/09 18:08:31 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696f-2: HTTP: GET /repo/search?count_only=1&uid=2&team_id=undefined&q=&page=1&mode=
+2025/06/09 18:08:31 .../eventsource/manager_run.go:46:(*Manager).Run() [T] Event source has no listeners
+2025/06/09 18:08:31 .../eventsource/manager_run.go:56:(*Manager).Run() [T] Pausing the eventsource
+2025/06/09 18:08:31 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696f-3: HTTP: GET /user/events (request)
+2025/06/09 18:08:31 HTTPRequest [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:08:31 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:31 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696f-4: HTTP: GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56 (request)
+2025/06/09 18:08:31 HTTPRequest [T] router: started   GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56 for 192.168.1.163:0
+2025/06/09 18:08:31 modules/process/manager.go:178:(*Manager).Add() [T] Start 6847696f-5: HTTP: GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false (request)
+2025/06/09 18:08:31 HTTPRequest [T] router: started   GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false for 192.168.1.163:0
+2025/06/09 18:08:31 routers/web/base.go:80:avatarStorageHandler.2() [W] Unable to find avatars 9f952c0cef72e08d053244cad89e4101
+2025/06/09 18:08:31 HTTPRequest [I] router: completed GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56 for 192.168.1.163:0, 404 Not Found in 0.0ms @ web/base.go:22(avatars)
+2025/06/09 18:08:31 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696f-4: HTTP: GET /avatars/9f952c0cef72e08d053244cad89e4101?size=56
+2025/06/09 18:08:31 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:31 .../eventsource/manager_run.go:61:(*Manager).Run() [T] Connection detected - restarting the eventsource
+2025/06/09 18:08:31 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:31 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:31 HTTPRequest [I] router: completed GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false for 192.168.1.163:0, 200 OK in 4.1ms @ repo/repo.go:459(repo.SearchRepo)
+2025/06/09 18:08:31 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696f-5: HTTP: GET /repo/search?sort=updated&order=desc&uid=2&team_id=undefined&q=&page=1&limit=15&mode=&archived=false
+2025/06/09 18:08:33 HTTPRequest [T] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 2022.5ms @ events/events.go:18(events.Events)
+2025/06/09 18:08:33 modules/process/manager.go:226:(*Manager).remove() [T] Done 6847696f-3: HTTP: GET /user/events
+2025/06/09 18:08:33 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476971: HTTP: GET /noahjgreer/testificate (request)
+2025/06/09 18:08:33 HTTPRequest [T] router: started   GET /noahjgreer/testificate for 192.168.1.163:0
+2025/06/09 18:08:33 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:33 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:33 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:33 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:33 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:33 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476971-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all (from 68476971) (normal)
+2025/06/09 18:08:33 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476971-2: git.Run(by:git.(*Repository).IsEmpty, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... --git-dir=F:\LocalGit\repos\noahjgreer\testificate.git rev-list -n 1 --all
+2025/06/09 18:08:33 .../context/context_response.go:69:(*Context).HTML() [D] Template: repo/empty
+2025/06/09 18:08:33 HTTPRequest [I] router: completed GET /noahjgreer/testificate for 192.168.1.163:0, 200 OK in 33.8ms @ repo/view_home.go:390(repo.Home)
+2025/06/09 18:08:33 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476971: HTTP: GET /noahjgreer/testificate
+2025/06/09 18:08:33 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476971-3: HTTP: GET /user/events (request)
+2025/06/09 18:08:33 HTTPRequest [T] router: started   GET /user/events for 192.168.1.163:0
+2025/06/09 18:08:33 services/auth/session.go:40:(*Session).Verify() [T] Session Authorization: Found user[2]
+2025/06/09 18:08:33 services/auth/session.go:58:(*Session).Verify() [T] Session Authorization: Logged in user <User 2:noahjgreer>
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.5ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-2: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:36 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:36 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:36 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:36 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-3: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs . (from 68476974-2) (normal)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-3: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:36 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 31.8ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-2: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-4: HTTP: HEAD /api/v3/meta?ghd=cf29e62b-f76a-45a3-95f5-0f4b6bdb8c53 (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   HEAD /api/v3/meta?ghd=cf29e62b-f76a-45a3-95f5-0f4b6bdb8c53 for 192.168.1.163:0
+2025/06/09 18:08:36 routers/web/web.go:1654:registerWebRoutes.58() [T] plainTextInternal (status=404): Not found.
+2025/06/09 18:08:36 HTTPRequest [I] router: completed HEAD /api/v3/meta?ghd=cf29e62b-f76a-45a3-95f5-0f4b6bdb8c53 for 192.168.1.163:0, 404 Not Found in 0.0ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-4: HTTP: HEAD /api/v3/meta?ghd=cf29e62b-f76a-45a3-95f5-0f4b6bdb8c53
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-5: HTTP: POST /noahjgreer/testificate.git/git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:36 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:36 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:36 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:36 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-6: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git (from 68476974-5) (normal)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-6: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:36 HTTPRequest [I] router: completed POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0, 200 OK in 32.3ms @ repo/githttp.go:471(repo.ServiceUploadPack)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-5: HTTP: POST /noahjgreer/testificate.git/git-upload-pack
+2025/06/09 18:08:36 HTTPRequest [I] router: polling   GET /user/events for 192.168.1.163:0, elapsed 3010.6ms @ events/events.go:18(events.Events)
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-7: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 401 Unauthorized in 1.0ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-7: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-8: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:36 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:36 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:36 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:36 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-9: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs . (from 68476974-8) (normal)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-9: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:36 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack for 192.168.1.163:0, 200 OK in 30.7ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-8: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-upload-pack
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-10: HTTP: HEAD /api/v3/meta?ghd=82a55c46-5379-4651-9437-6f36a5b09f72 (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   HEAD /api/v3/meta?ghd=82a55c46-5379-4651-9437-6f36a5b09f72 for 192.168.1.163:0
+2025/06/09 18:08:36 routers/web/web.go:1654:registerWebRoutes.58() [T] plainTextInternal (status=404): Not found.
+2025/06/09 18:08:36 HTTPRequest [I] router: completed HEAD /api/v3/meta?ghd=82a55c46-5379-4651-9437-6f36a5b09f72 for 192.168.1.163:0, 404 Not Found in 0.0ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-10: HTTP: HEAD /api/v3/meta?ghd=82a55c46-5379-4651-9437-6f36a5b09f72
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-11: HTTP: POST /noahjgreer/testificate.git/git-upload-pack (request)
+2025/06/09 18:08:36 HTTPRequest [T] router: started   POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0
+2025/06/09 18:08:36 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:36 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:36 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:36 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:36 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:36 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476974-12: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git (from 68476974-11) (normal)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-12: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... upload-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:36 HTTPRequest [I] router: completed POST /noahjgreer/testificate.git/git-upload-pack for 192.168.1.163:0, 200 OK in 32.6ms @ repo/githttp.go:471(repo.ServiceUploadPack)
+2025/06/09 18:08:36 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476974-11: HTTP: POST /noahjgreer/testificate.git/git-upload-pack
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack (request)
+2025/06/09 18:08:38 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 18:08:38 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0, 401 Unauthorized in 1.0ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:38 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976-2: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack (request)
+2025/06/09 18:08:38 HTTPRequest [T] router: started   GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0
+2025/06/09 18:08:38 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:38 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:38 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:38 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:38 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976-3: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc --advertise-refs . (from 68476976-2) (normal)
+2025/06/09 18:08:38 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976-3: git.Run(by:repo.GetInfoRefs, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc --advertise-refs .
+2025/06/09 18:08:38 HTTPRequest [I] router: completed GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack for 192.168.1.163:0, 200 OK in 32.4ms @ repo/githttp.go:511(repo.GetInfoRefs)
+2025/06/09 18:08:38 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976-2: HTTP: GET /noahjgreer/testificate.git/info/refs?service=git-receive-pack
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976-4: HTTP: HEAD /api/v3/meta?ghd=3b8c63a1-4fde-43f2-8594-3a1066f8ccc4 (request)
+2025/06/09 18:08:38 HTTPRequest [T] router: started   HEAD /api/v3/meta?ghd=3b8c63a1-4fde-43f2-8594-3a1066f8ccc4 for 192.168.1.163:0
+2025/06/09 18:08:38 routers/web/web.go:1654:registerWebRoutes.58() [T] plainTextInternal (status=404): Not found.
+2025/06/09 18:08:38 HTTPRequest [I] router: completed HEAD /api/v3/meta?ghd=3b8c63a1-4fde-43f2-8594-3a1066f8ccc4 for 192.168.1.163:0, 404 Not Found in 0.5ms @ <autogenerated>:1(WebNotFound)
+2025/06/09 18:08:38 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976-4: HTTP: HEAD /api/v3/meta?ghd=3b8c63a1-4fde-43f2-8594-3a1066f8ccc4
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976-5: HTTP: POST /noahjgreer/testificate.git/git-receive-pack (request)
+2025/06/09 18:08:38 HTTPRequest [T] router: started   POST /noahjgreer/testificate.git/git-receive-pack for 192.168.1.163:0
+2025/06/09 18:08:38 services/auth/basic.go:74:(*Basic).Verify() [T] Basic Authorization: Attempting login for: noahjgreer
+2025/06/09 18:08:38 services/auth/basic.go:100:(*Basic).Verify() [T] Basic Authorization: Valid AccessToken for user[0]
+2025/06/09 18:08:38 models/repo/repo.go:412:(*Repository).LoadUnits() [T] repo.Units, ID=2, Types: [<UnitType:1:repo.code>, <UnitType:2:repo.issues>, <UnitType:3:repo.pulls>, <UnitType:4:repo.releases>, <UnitType:5:repo.wiki>, <UnitType:8:repo.projects>, <UnitType:9:repo.packages>, <UnitType:10:repo.actions>]
+2025/06/09 18:08:38 .../access/repo_permission.go:261:GetUserRepoPermission.1() [T] Permission Loaded for user <User 2:noahjgreer> in repo <Repository 2:noahjgreer/testificate>, permissions: <Permission AccessMode=owner, 8 Units, 0 UnitsMode(s): [
+	units[0]: ID=9 RepoID=2 Type=<UnitType:1:repo.code> Config={}
+	units[1]: ID=10 RepoID=2 Type=<UnitType:2:repo.issues> Config={"EnableTimetracker":true,"AllowOnlyContributorsToTrackTime":true,"EnableDependencies":true}
+	units[2]: ID=11 RepoID=2 Type=<UnitType:3:repo.pulls> Config={"IgnoreWhitespaceConflicts":false,"AllowMerge":true,"AllowRebase":true,"AllowRebaseMerge":true,"AllowSquash":true,"AllowFastForwardOnly":true,"AllowManualMerge":false,"AutodetectManualMerge":false,"AllowRebaseUpdate":true,"DefaultDeleteBranchAfterMerge":false,"DefaultMergeStyle":"merge","DefaultAllowMaintainerEdit":false}
+	units[3]: ID=12 RepoID=2 Type=<UnitType:4:repo.releases> Config={}
+	units[4]: ID=13 RepoID=2 Type=<UnitType:5:repo.wiki> Config={}
+	units[5]: ID=14 RepoID=2 Type=<UnitType:8:repo.projects> Config={"ProjectsMode":"all"}
+	units[6]: ID=15 RepoID=2 Type=<UnitType:9:repo.packages> Config={}
+	units[7]: ID=16 RepoID=2 Type=<UnitType:10:repo.actions> Config={"DisabledWorkflows":null}
+	anonymousAccessMode: map[]
+	everyoneAccessMode: map[]
+	]>
+2025/06/09 18:08:38 modules/git/command.go:305:(*Command).run() [D] git.Command: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:38 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476976-6: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc .../noahjgreer\testificate.git (from 68476976-5) (normal)
+2025/06/09 18:08:39 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976-6: git.Run(by:repo.serviceRPC, repo:.../noahjgreer\testificate.git): "C:\\Program Files\\Git\\cmd\\git.exe" ...global... receive-pack --stateless-rpc .../noahjgreer\testificate.git
+2025/06/09 18:08:39 HTTPRequest [I] router: completed POST /noahjgreer/testificate.git/git-receive-pack for 192.168.1.163:0, 200 OK in 859.0ms @ repo/githttp.go:479(repo.ServiceReceivePack)
+2025/06/09 18:08:39 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476976-5: HTTP: POST /noahjgreer/testificate.git/git-receive-pack
+2025/06/09 18:09:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 684769a1: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:09:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 684769a1: Cron: Start actions schedule tasks
+2025/06/09 18:10:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 684769dd: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:10:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 684769dd: Cron: Start actions schedule tasks
+2025/06/09 18:11:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476a19: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:11:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476a19: Cron: Start actions schedule tasks
+2025/06/09 18:12:21 modules/process/manager.go:178:(*Manager).Add() [T] Start 68476a55: Cron: Start actions schedule tasks (normal)
+2025/06/09 18:12:21 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476a55: Cron: Start actions schedule tasks
+2025/06/09 18:12:26 .../graceful/manager_windows.go:104:(*Manager).Execute() [T] SVC requested shutdown - shutting down
+2025/06/09 18:12:26 .../graceful/manager_windows.go:119:(*Manager).Execute() [T] Sending StopPending state to SVC
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "task" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "repo_license_updater" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "notification-service" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-21: Service: EventSource
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "branch_sync" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-20: Queue: task
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-11: Queue: branch_sync
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-6: Queue: notification-service
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "pr_auto_merge" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-19: Queue: pr_auto_merge
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "branch_sync" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "actions_ready_job" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "notification-service" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "pr_patch_checker" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-7: Queue: repo-archive
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "pr_auto_merge" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "push_update" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-18: Queue: pr_patch_checker
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "task" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "pr_patch_checker" stops running
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-10: Queue: push_update
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-8: Queue: tag_sync
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-22: Queue: actions_ready_job
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-15: Queue: mirror
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "repo_stats_update" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-14: Queue: repo_stats_update
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "push_update" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "tag_sync" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "actions_ready_job" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "repo_stats_update" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "tag_sync" stops running
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-13: Queue: issue_indexer
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "webhook_sender" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "mirror" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-16: Queue: webhook_sender
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "issue_indexer" is shutting down
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "webhook_sender" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "issue_indexer" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "mirror" stops running
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-32: Service: SlowQueryDetector
+2025/06/09 18:12:26 .../queue/workergroup.go:349:(*WorkerPoolQueue).doRun() [D] Queue "repo-archive" is shutting down
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-9: Queue: repo_license_updater
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "repo-archive" stops running
+2025/06/09 18:12:26 .../queue/workergroup.go:350:(*WorkerPoolQueue).doRun() [D] Queue "repo_license_updater" stops running
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-23: Service: Cron
+2025/06/09 18:12:26 .../graceful/server_hooks.go:46:(*Server).doShutdown() [I] PID: 11172 Listener ([::]:3000) closed.
+2025/06/09 18:12:26 modules/graceful/server.go:156:(*Server).Serve() [D] Waiting for connections to finish... (PID: 11172)
+2025/06/09 18:12:26 HTTPRequest [T] router: completed GET /user/events for 192.168.1.163:0, 200 OK in 233450.9ms @ events/events.go:18(events.Events)
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476971-3: HTTP: GET /user/events
+2025/06/09 18:12:26 modules/graceful/server.go:162:(*Server).Serve() [D] Serve() returning... (PID: 11172)
+2025/06/09 18:12:26 modules/graceful/manager.go:169:(*Manager).doHammerTime() [W] Setting Hammer condition
+2025/06/09 18:12:26 .../graceful/manager_windows.go:145:(*Manager).Execute() [T] Stopped
+2025/06/09 18:12:26 cmd/web.go:374:listen() [I] HTTP Listener: 0.0.0.0:3000 Closed
+2025/06/09 18:12:26 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-33: Web: Gitea Server
+2025/06/09 18:12:27 modules/graceful/manager.go:185:(*Manager).doTerminate() [W] Terminating
+2025/06/09 18:12:27 .../indexer/issues/indexer.go:119:InitIssueIndexer.1.2() [D] Closing issue indexer
+2025/06/09 18:12:27 modules/process/manager.go:226:(*Manager).remove() [T] Done 68476965-12: Service: IssueIndexer
+2025/06/09 18:12:27 .../indexer/issues/indexer.go:121:InitIssueIndexer.1.2() [I] PID: 11172 Issue Indexer closed
+2025/06/09 18:12:27 cmd/web.go:233:serveInstalled() [I] PID: 11172 Gitea Web Finished
