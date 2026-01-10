@@ -5,7 +5,7 @@
   </a>
   <br>
   <a href="https://wakatime.com/@75ffedea-334a-4a78-a503-91c919c5eee2" target="_blank">
-    <img src="https://wakatime.com/share/@FinniTheFox/40fa60a3-3a24-416d-89c0-8755688c2bdc.svg">
+    <img src="https://wakatime.com/share/@FinniTheFox/3de2501b-4175-4c92-b595-6b0ecc097581.svg">
   </a>
   
 </p>
