@@ -18,7 +18,7 @@
 - 💞️ I’m looking to collaborate on Unity and Web Development Projects.
 - 📫 How to reach me: noahjgreer@gmail.com
 - 🧠 I know Python, HTML, CSS, JavaScript, C#, Scratch, and some Java.
-- 📽️ My favorite projects to work on are VRChat Instances, 3D Modelling, and Web Development.
+- 📽️ My favorite types of projects to work on are VRChat Instances, 3D Models, and Web Development.
 
 <!---
 woahnoah07/woahnoah07 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
